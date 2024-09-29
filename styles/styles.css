@@ -1,0 +1,129 @@
+body {
+    font-family: 'kelsonBold', serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* reset a tag */
+a {
+    text-decoration: none;
+    color:#50222b;
+}
+
+/* reset ul li */
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* FOOTER */
+.footer {
+    background-color: #FAAD68;
+    margin-top: 30px;
+    color: #50222b;  
+    line-height: 24px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-size: 15px;
+    padding: 30px 0px;
+}
+
+.footer-main::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.footer-logo{
+    display: block;
+    width: 100%;
+    float: left;
+    margin-top: 25px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-thongtin, .footer-sanpham, .footer-lienhe{
+    float: left;
+    padding-left: 30px;
+}
+
+.footer-main a{
+    font-size: 14px;
+    transition: all ease 0.3s;
+}
+
+a:hover {
+    color: #f2d9c3;
+}
+
+.facebook, .youtube, .twitter, .pinterest, .instagram {
+    display: inline-block;
+    color: #ffffff;
+    height: 25px;
+    width: 25px;
+    font-size: 12px !important;
+    line-height: 27px;
+    text-align: center;
+    border-radius: 50% !important;
+    transition: all 0.2s ease-out 0s !important;
+    margin: 0 3px;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #00bdec;
+}
+
+.instagram {
+    background: linear-gradient(#f9ce34, #ee2a7b,#6228d7); 
+}
+
+.youtube {
+    background-color: #c4302b;
+}
+
+.pinterest {
+    background-color: #b8242a;
+}
+
+.facebook:hover, .youtube:hover, .twitter:hover, .pinterest:hover {
+    background-color: black;
+}
+
+.instagram:hover {
+    background: black;
+}
+
+@media screen and (min-width: 480px) {
+    .wrapper {
+        padding: 0 15px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .footer-logo {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .footer-thongtin, .footer-sanpham, .footer-lienhe {
+        width: 16.666%;
+    }
+}
