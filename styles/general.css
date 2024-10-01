@@ -1,0 +1,25 @@
+body {
+    font-family: 'kelsonBold', serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* reset a tag */
+a {
+    text-decoration: none;
+    color:#50222b;
+}
+
+/* reset ul li */
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
