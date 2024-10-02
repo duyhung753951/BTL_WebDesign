@@ -1,0 +1,85 @@
+/* HEADER */
+.header {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    margin: 15px;
+  }
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+  }
+  .header-item {
+    align-self: center;
+    font-style: italic;
+  }
+  .header-item.header-account hr {
+    border: 2px solid black;
+  }
+  .header-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 30px;
+    justify-content: space-between;
+  }
+  .header-navul-1 {
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav-item {
+    padding: 20px;
+    margin: 25px;
+  }
+  .header-navul-2 {
+    display: flex;
+  }
+  .account {
+    display: none;
+    background-color: rgb(62, 60, 57);
+    color: #ffffff;
+    width: 200px;
+    padding: 5px 5px;
+    text-align: left;
+    font-size: small;
+  }
+  .account-item {
+    color: #ffffff;
+  }
+  .header-account:hover div {
+    display: block;
+  }
+  .us-uk {
+    display: none;
+    background-color: rgb(62, 60, 57);
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: small;
+  }
+  .nav-item:hover .us-uk {
+    display: block;
+  }
+  .service {
+    display: none;
+    background-color: rgb(62, 60, 57);
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+    font-size: small;
+  }
+  .nav-item:hover .service {
+    display: block;
+  }
+  .table {
+    background-color: rgb(62, 60, 57);
+    color: #ffffff;
+    display: none;
+    font-size: small;
+  }
+  .nav-item:hover .table {
+    display: block;
+  }
