@@ -6,10 +6,20 @@ body {
     padding: 0;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h4 {
     text-transform: uppercase;
     margin-bottom: 10px;
 }
+
+h3 {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #e2e2e2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
 
 /* reset a tag */
 a {
@@ -23,3 +33,46 @@ ul, li {
     margin: 0;
     padding: 0;
 }
+
+.wrapper::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (min-width: 480px) {
+    .wrapper {
+      padding: 0 15px;
+    }
+    .header-shopping {
+      padding: 20px;
+    }
+  }
+  
+  @media only screen and (min-width: 769px) {
+    .footer-logo {
+      width: 25% !important;
+    }
+    .header-navul-1 {
+        float: left !important;
+    }
+    .footer-thongtin,
+    .footer-sanpham,
+    .footer-lienhe {
+      width: 16.666%;
+    }
+    .header-account, .header-logo {
+        width: 43% !important;
+    }
+    .header-shop {
+        width: 14% !important;
+    }
+    .header-shop a, .header-navul-2 {
+        float: right !important;
+    }
+    .menu-item {
+        width: 25%;
+    }
+  }
+  

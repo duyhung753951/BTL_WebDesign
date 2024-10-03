@@ -1,13 +1,13 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hãng đĩa thời đại</title>
-    <!-- <link rel="stylesheet" href="./styles/reset.css"> -->
+    <link rel="stylesheet" href="./styles/general.css">
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css">
     <!-- import font -->
     <link href="https://fonts.cdnfonts.com/css/kelson-bold" rel="stylesheet" />
     <!-- import social media logo -->
@@ -19,143 +19,139 @@
   <body>
     <!-- Trang Store -->
     <!-- HEADER -->
-    <div class="header">
-      <div class="header-top">
-        <div class="header-top header-item header-account">
-          <p class="header-account">
-            <i class="fa-solid fa-gear"></i> Tài Khoản
-          </p>
-          <div class="account">
-            <p class="account-item">
-              <a href="" class="account-item"
-                ><i class="fa-solid fa-face-smile"></i> Đăng Nhập</a
-              >
-            </p>
-            <p class="account-item">
-              <a href="" class="account-item"
-                ><i class="fa-solid fa-key"></i> Tạo tài khoản</a
-              >
-            </p>
-            <p class="account-item">
-              <a href="" class="account-item"
-                ><i class="fa-solid fa-star"></i> Được Yêu Thích Nhất</a
-              >
-            </p>
-            <p class="account-item">
-              <a href="" class="account-item"
-                ><i class="fa-solid fa-heart"></i> Sản Phẩm Yêu Thích</a
-              >
-            </p>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header-top">
+          <div class="header-item header-account">
+            <div class="account-hover">
+              <span>
+                <i class="fa-solid fa-gear"></i>Tài Khoản
+              </span>
+              <ul>
+                <li>
+                  <a href="#" class="customer_login_link"><i class="fa fa-smile-o"></i> Đăng nhập</a>
+                </li>
+                <li>
+                  <a href="#" class="customer_register_link"><i class="fa fa-key"></i> Tạo tài khoản</a>
+                </li>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-star-o"></i> Được yêu thích nhất</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-heart-o"></i> Sản phẩm yêu thích</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class=" header-logo">
+            <a href=""><img src="https://theme.hstatic.net/1000304920/1001035765/14/footer_logo.png?v=240" alt="logo-web"/></a>
+          </div>
+          <div class="header-item header-shop">
+            <a href=""><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a>
           </div>
         </div>
-        <div class="header-top header-item">
-          <a href=""
-            ><img
-              src="https://theme.hstatic.net/1000304920/1001035765/14/footer_logo.png?v=240"
-              alt="logo-web"
-          /></a>
-        </div>
-        <div class="header-top header-item header-shop">
-          <a href=""><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a>
+        <!-- HEADER NAVBAR -->
+        <div class="">
+          <div class="main-menu">
+            <nav class="header-nav">
+              <ul class="header-navul-1">
+                <li class="nav-gohome">  
+                  <a href="/">
+                    <span class="gohome"></span>
+                  </a>
+                </li>
+                <li class="nav-item"><a href="">HOME</a></li>
+                <li class="nav-item">
+                  <a href="#">BẢN TIN THỜI ĐẠI <i class="fa-solid fa-chevron-down"></i></a>
+                  <ul class="nav-dropdown">
+                    <li>
+                      <a href="#">US-UK</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#">DỊCH VỤ <i class="fa-solid fa-chevron-down"></i></a>
+                  <ul class="nav-dropdown">
+                    <li>
+                      <a href="#">Phát Hành Vật Lý</a>
+                    </li>
+                    <li>
+                      <a href="#">Phát Hành Nhạc Số</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item" style="position: static;">
+                  <a href="#">SHOP <i class="fa-solid fa-chevron-down"></i></a>
+                  <ul class="mega-menu-nav-dropdown">
+                    <li class="mega-menu">
+                        <div class="wrapper-menu">
+                          <div class="menu-item">
+                            <h3>ẤN BẢN THỜI ĐẠI</h3>
+                            <ul class="super">
+                              <li><a href="#">Ấn Bản Có Chữ Ký</a></li>
+                              <li><a href="#">CD + DVD</a></li>
+                              <li><a href="#">Băng Cassette</a></li>
+                              <li><a href="#">Đĩa đơn</a></li>
+                              <li><a href="#">Times' Merchandise</a></li>
+                            </ul>
+                          </div>
+                          <div class="menu-item">
+                            <h3>ĐĨA HÁT VIỆT NAM</h3>
+                            <ul class="super">
+                              <li><a href="#">Ấn Bản Có Chữ Ký</a></li>
+                              <li><a href="#">CD + DVD</a></li>
+                              <li><a href="#">Đĩa than</a></li>
+                              <li><a href="#">Băng Cassette</a></li>
+                              <li><a href="#">Đĩa đơn</a></li>
+                              <li><a href="#">Băng cối</a></li>
+                            </ul>
+                          </div>
+                          <div class="menu-item">
+                            <h3>BĂNG ĐĨA QUỐC TẾ</h3>
+                            <ul class="super">
+                              <li><a href="#">Autographed</a></li>
+                              <li><a href="#">CD + DVD</a></li>
+                              <li><a href="#">Vinyl</a></li>
+                              <li><a href="#">Single</a></li>
+                              <li><a href="#">Cassette Tape</a></li>
+                              <li><a href="#">Reel To Reel</a></li>
+                              <li><a href="#">8-Track Tape</a></li>
+                            </ul>
+                          </div>
+                          <div class="menu-item">
+                            <h3>TIMES LIFESTYLE</h3>
+                            <ul class="super">
+                              <li><a href="#">Audio</a></li>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">Book</a></li>
+                              <li><a href="#">Magazine</a></li>
+                              <li><a href="#">Tech</a></li>
+                              <li><a href="#">Beauty</a></li>
+                              <li><a href="#">Merchadise</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="header-navul-2">
+                <li class="nav-item nav-search">
+                  <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                  <input type="search" />
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
-      <hr />
-      <div class="header-nav">
-        <ul class="header-navul-1">
-          <li class="nav-item nav-home">
-            <a href=""><i class="fa-solid fa-house"></i></a>
-          </li>
-          <li class="nav-item"><a href="">HOME</a></li>
-          <li class="nav-item">
-            <a href=""
-              >BẢN TIN THỜI ĐẠI <i class="fa-solid fa-chevron-down"></i
-            ></a>
-            <p class="us-uk"><a href="" class="us-uk">US-UK</a></p>
-          </li>
-
-          <li class="nav-item">
-            <a href="">DỊCH VỤ <i class="fa-solid fa-chevron-down"></i></a>
-            <div class="service">
-              <p class="sv"><a href="" class="service">Phát Hành Vật Lý</a></p>
-              <p class="sv">
-                <a href="" class="service">Phát Hành Nhạc Số </a>
-              </p>
-            </div>
-          </li>
-
-          <li class="nav-item">
-            <a href="">SHOP <i class="fa-solid fa-chevron-down"></i></a>
-            <table class="table">
-              <tr>
-                <th>ẤN BẢN THỜI ĐẠI</th>
-                <th>ĐĨA HÁT VIỆT NAM</th>
-                <th>BĂNG ĐĨA QUỐC TẾ</th>
-                <th>TIMES LIFE STYLE</th>
-                <th>VINYL VIBES 8791</th>
-              </tr>
-              <tr>
-                <td><a href="" class="table">Ấn bản có chữ ký</a></td>
-                <td><a href="" class="table">Ấn bản có chữ ký</a></td>
-                <td><a href="" class="table">Autographed</a></td>
-                <td><a href="" class="table">Audio</a></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td><a href="" class="table">CD + DVD</a></td>
-                <td><a href="" class="table">CD + DVD</a></td>
-                <td><a href="" class="table">CD + DVD</a></td>
-                <td><a href="" class="table">Home</a></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td><a href="" class="table">Băng</a></td>
-                <td><a href="" class="table">Đĩa Than</a></td>
-                <td><a href="" class="table">Single</a></td>
-                <td><a href="" class="table">Book</a></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td><a href="" class="table">Cassett</a>e</td>
-                <td><a href="" class="table">Đĩa Đơn</a></td>
-                <td><a href="" class="table">Cassett</a>e</td>
-                <td><a href="" class="table">Magazine</a></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td><a href="" class="table">Đĩa Đơn</a></td>
-                <td><a href="" class="table">Băng</a></td>
-                <td><a href="" class="table">Tape</a></td>
-                <td><a href="" class="table">Beauty</a></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td><a href="" class="table">Times</a></td>
-                <td><a href="" class="table">Cassette</a></td>
-                <td><a href="" class="table">Reel to Reel</a></td>
-                <td><a href="" class="table">Tech</a></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td><a href="" class="table">Merchandise</a></td>
-                <td><a href="" class="table">Băng Cối</a></td>
-                <td><a href="" class="table">8-Track Tape</a></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </table>
-          </li>
-        </ul>
-        <ul class="header-navul-2">
-          <li class="nav-item nav-search">
-            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-            <input type="search" />
-          </li>
-        </ul>
-      </div>
-    </div>
+    </header>
 
     <!-- MAIN -->
-    <div class="main"></div>
+    <div class="main">
+      <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, tempore! Natus molestias recusandae ducimus quod totam sunt dolore fuga repellendus ad adipisci minima quae aperiam, non rerum, perspiciatis deserunt iusto accusantium aspernatur iste laboriosam est cumque, vero deleniti fugit? Dignissimos deleniti quibusdam provident! Accusantium repellendus nemo ab praesentium, illum odit fugit et cupiditate earum sapiente nesciunt architecto natus mollitia sequi quibusdam ipsa tenetur sed minus quidem quis adipisci quos suscipit! Officia vitae ipsum et quaerat deleniti sequi perferendis impedit dicta officiis iusto est in odit consequuntur tempore non ullam voluptatum explicabo nulla tenetur at ratione, consectetur quas. Perferendis voluptas laudantium deleniti expedita voluptate, repudiandae perspiciatis eaque ducimus labore veniam velit, repellat provident amet reiciendis odit accusamus a dolores maiores quam excepturi assumenda consequatur! Incidunt consequatur, ab eius temporibus reiciendis quia quae dolore doloribus quisquam est totam quaerat cumque commodi vitae delectus officiis ipsam sint doloremque, architecto itaque natus veniam nisi! Dicta, sint hic aperiam aspernatur debitis quaerat dignissimos illo molestias dolores omnis excepturi at pariatur adipisci ab expedita nemo dolor optio sed error sapiente quasi voluptatibus deserunt. Reiciendis ipsa, dicta nostrum numquam quae, vitae facere aliquam id ea totam asperiores obcaecati sapiente ipsam voluptas esse porro illum, in minima laboriosam quaerat voluptatum eos assumenda vel? Quidem praesentium architecto quos, aliquam animi quaerat id corrupti! Neque id delectus, soluta itaque facilis totam ut possimus dolorum officia eveniet saepe! Facilis, amet dicta repellendus error est laboriosam iusto autem? Commodi, praesentium quisquam suscipit temporibus magni error consequatur voluptate in veniam, sint libero, rerum laudantium enim incidunt repellat! Nostrum, illo odit sed, minima eligendi eius facere pariatur culpa molestias quam dignissimos tenetur neque dolores incidunt eaque laudantium adipisci voluptatum atque rem aspernatur omnis delectus vitae? Commodi distinctio sapiente sunt? Officia, magni illum! Modi earum qui corrupti perferendis impedit possimus alias minima dolorum aperiam a tempore aliquam ex voluptate quo, saepe eaque consectetur nulla, error, officia dignissimos sequi esse et. Est quibusdam harum minima dolores veniam illum numquam atque nemo modi praesentium repudiandae dolore saepe perferendis itaque placeat quas, veritatis aliquid soluta ad cupiditate delectus ex. Saepe possimus, consectetur accusamus in voluptate pariatur, reprehenderit cum ducimus veniam quisquam reiciendis temporibus quo similique mollitia cumque enim deserunt recusandae ea sint vel non. Natus unde voluptate ipsum nisi doloremque, nesciunt rerum est aliquid illo officiis sed suscipit odit ducimus minus incidunt laboriosam itaque explicabo nemo numquam quod perspiciatis dolores eaque. At magnam eos, unde voluptatibus quod provident perferendis error. Mollitia, vel similique enim ipsum alias expedita quo temporibus vitae sunt voluptatum suscipit. Ipsam consequuntur eum beatae. A repellendus expedita eligendi ea! At necessitatibus cum veniam facilis aliquam sunt ea numquam, minus laboriosam rem cumque voluptatibus architecto nulla amet! Aspernatur eius quaerat sapiente iste eos optio enim expedita a temporibus excepturi! Minus repellendus perspiciatis culpa libero ipsa error provident aperiam numquam reiciendis nisi, quasi veritatis similique nulla laborum voluptatum laudantium laboriosam labore iure totam dignissimos nobis expedita doloribus enim quibusdam? Eius vitae neque soluta quis velit sed nobis. Voluptas natus deserunt inventore similique soluta repellendus qui temporibus recusandae. -->
+    </div>
     <!-- FOOTER -->
     <footer class="footer">
       <div class="wrapper">
@@ -211,218 +207,3 @@
     </footer>
   </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hãng đĩa thời đại</title>
-    <link rel="stylesheet" href="./styles/general.css"/>
-    <link rel="stylesheet" href="./styles/footer.css"/>
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/reset.css"/>
-    <!-- import font -->
-    <link href="https://fonts.cdnfonts.com/css/kelson-bold" rel="stylesheet" />
-    <!-- import social media logo -->
-    <script
-      src="https://kit.fontawesome.com/d904896f95.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!-- Trang Store -->
-    <!-- HEADER -->
-    <div class="header">
-      <div class="header-top">
-        <div class="header-top header-item header-account">
-          <p class="header-account">
-            <i class="fa-solid fa-gear"></i> Tài Khoản
-          </p>
-          <div class="account">
-            <p class="account-item">
-              <a href="" class="account-item"
-                ><i class="fa-solid fa-face-smile"></i> Đăng Nhập</a
-              >
-            </p>
-            <p class="account-item">
-              <a href="" class="account-item"
-                ><i class="fa-solid fa-key"></i> Tạo tài khoản</a
-              >
-            </p>
-            <p class="account-item">
-              <a href="" class="account-item"
-                ><i class="fa-solid fa-star"></i> Được Yêu Thích Nhất</a
-              >
-            </p>
-            <p class="account-item">
-              <a href="" class="account-item"
-                ><i class="fa-solid fa-heart"></i> Sản Phẩm Yêu Thích</a
-              >
-            </p>
-          </div>
-        </div>
-        <div class="header-top header-item">
-          <a href=""
-            ><img
-              src="https://theme.hstatic.net/1000304920/1001035765/14/footer_logo.png?v=240"
-              alt="logo-web"
-          /></a>
-        </div>
-        <div class="header-top header-item header-shop">
-          <a href=""><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a>
-        </div>
-      </div>
-      <hr />
-      <div class="header-nav">
-        <ul class="header-navul-1">
-          <li class="nav-item nav-home">
-            <a href=""><i class="fa-solid fa-house"></i></a>
-          </li>
-          <li class="nav-item"><a href="">HOME</a></li>
-          <li class="nav-item">
-            <a href=""
-              >BẢN TIN THỜI ĐẠI <i class="fa-solid fa-chevron-down"></i
-            ></a>
-            <p class="us-uk"><a href="" class="us-uk">US-UK</a></p>
-          </li>
-
-          <li class="nav-item">
-            <a href="">DỊCH VỤ <i class="fa-solid fa-chevron-down"></i></a>
-            <div class="service">
-              <p class="sv"><a href="" class="service">Phát Hành Vật Lý</a></p>
-              <p class="sv">
-                <a href="" class="service">Phát Hành Nhạc Số </a>
-              </p>
-            </div>
-          </li>
-
-          <li class="nav-item">
-            <a href="">SHOP <i class="fa-solid fa-chevron-down"></i></a>
-            <table class="table">
-              <tr>
-                <th>ẤN BẢN THỜI ĐẠI</th>
-                <th>ĐĨA HÁT VIỆT NAM</th>
-                <th>BĂNG ĐĨA QUỐC TẾ</th>
-                <th>TIMES LIFE STYLE</th>
-                <th>VINYL VIBES 8791</th>
-              </tr>
-              <tr>
-                <td><a href="" class="table">Ấn bản có chữ ký</a></td>
-                <td><a href="" class="table">Ấn bản có chữ ký</a></td>
-                <td><a href="" class="table">Autographed</a></td>
-                <td><a href="" class="table">Audio</a></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td><a href="" class="table">CD + DVD</a></td>
-                <td><a href="" class="table">CD + DVD</a></td>
-                <td><a href="" class="table">CD + DVD</a></td>
-                <td><a href="" class="table">Home</a></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td><a href="" class="table">Băng</a></td>
-                <td><a href="" class="table">Đĩa Than</a></td>
-                <td><a href="" class="table">Single</a></td>
-                <td><a href="" class="table">Book</a></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td><a href="" class="table">Cassett</a>e</td>
-                <td><a href="" class="table">Đĩa Đơn</a></td>
-                <td><a href="" class="table">Cassett</a>e</td>
-                <td><a href="" class="table">Magazine</a></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td><a href="" class="table">Đĩa Đơn</a></td>
-                <td><a href="" class="table">Băng</a></td>
-                <td><a href="" class="table">Tape</a></td>
-                <td><a href="" class="table">Beauty</a></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td><a href="" class="table">Times</a></td>
-                <td><a href="" class="table">Cassette</a></td>
-                <td><a href="" class="table">Reel to Reel</a></td>
-                <td><a href="" class="table">Tech</a></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td><a href="" class="table">Merchandise</a></td>
-                <td><a href="" class="table">Băng Cối</a></td>
-                <td><a href="" class="table">8-Track Tape</a></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </table>
-          </li>
-        </ul>
-        <ul class="header-navul-2">
-          <li class="nav-item nav-search">
-            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-            <input type="search" />
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- MAIN -->
-    <div class="main"></div>
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="wrapper">
-        <div class="footer-main">
-          <div class="footer-logo">
-            <a href="#"
-              ><img
-                src="https://theme.hstatic.net/1000304920/1001035765/14/footer_logo.png?v=240"
-                alt="logo"
-            /></a>
-          </div>
-          <div class="footer-thongtin">
-            <h3>Thông tin</h3>
-            <ul>
-              <li><a href="">Liên hệ</a></li>
-              <li><a href="">Chính sách đổi trả</a></li>
-              <li><a href="">Thông tin ngân hàng</a></li>
-              <li><a href="">Câu hỏi thường gặp</a></li>
-              <li><a href="">International order</a></li>
-            </ul>
-          </div>
-          <div class="footer-sanpham">
-            <h3>Sản phẩm</h3>
-            <ul>
-              <li><a href="#">Ấn bản Thời Đại</a></li>
-              <li><a href="#">CD / DVD</a></li>
-              <li><a href="#">Đĩa than</a></li>
-              <li><a href="#">Băng Cassette</a></li>
-            </ul>
-          </div>
-          <div class="footer-lienhe">
-            <h3>Time Records</h3>
-            <div class="logo-mxh">
-              <a href="#" class="facebook"
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
-              <a href="#" class="twitter"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
-              <a href="#" class="instagram"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a href="#" class="youtube"
-                ><i class="fa-brands fa-youtube"></i
-              ></a>
-              <a href="#" class="pinterest"
-                ><i class="fa-brands fa-pinterest"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>
->>>>>>> 0387722427de7faf43813ce46598cab0d4c64bf6

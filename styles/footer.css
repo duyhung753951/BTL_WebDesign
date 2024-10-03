@@ -10,12 +10,6 @@
   padding: 30px 0px;
 }
 
-.footer-main::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
 .footer-logo {
   display: block;
   width: 100%;
@@ -40,8 +34,12 @@
   transition: all ease 0.3s;
 }
 
-a:hover {
+.footer a:hover {
   color: #f2d9c3;
+}
+
+.logo-mxh a {
+  margin-bottom: 5px;
 }
 
 .facebook,
@@ -92,33 +90,3 @@ a:hover {
   background: black;
 }
 
-@media screen and (min-width: 480px) {
-  .wrapper {
-    padding: 0 15px;
-  }
-  .header-account {
-    padding: 20px;
-    width: 20%;
-  }
-  .header-logo {
-    padding: 10px;
-    width: 60%;
-  }
-  .header-shopping {
-    padding: 20px;
-  }
-}
-
-@media only screen and (min-width: 769px) {
-  .footer-logo {
-    width: 25%;
-  }
-}
-
-@media only screen and (min-width: 769px) {
-  .footer-thongtin,
-  .footer-sanpham,
-  .footer-lienhe {
-    width: 16.666%;
-  }
-}
