@@ -1,101 +1,124 @@
+/* FOOTER */
 .footer {
-    background-color: #FAAD68;
-    margin-top: 30px;
-    color: #50222b;  
-    line-height: 24px;
-    font-weight: normal;
-    letter-spacing: 2px;
-    font-size: 15px;
-    padding: 30px 0px;
+  background-color: #faad68;
+  margin-top: 30px;
+  color: #50222b;
+  line-height: 24px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 15px;
+  padding: 30px 0px;
 }
 
 .footer-main::after {
     content: '';
-    display: block;
+    display: table;
     clear: both;
 }
 
-.footer-logo{
-    display: block;
-    width: 100%;
-    float: left;
-    margin-top: 25px;
+.footer-logo {
+  display: block;
+  width: 100%;
+  float: left;
+  margin-top: 25px;
 }
 
 .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.footer-thongtin, .footer-sanpham, .footer-lienhe{
-    float: left;
-    padding-left: 30px;
+.footer-thongtin,
+.footer-sanpham,
+.footer-lienhe {
+  float: left;
+  padding-left: 30px;
 }
 
-.footer-main a{
-    font-size: 14px;
-    transition: all ease 0.3s;
+.footer-main a {
+  font-size: 14px;
+  transition: all ease 0.3s;
 }
 
 a:hover {
-    color: #f2d9c3;
+  color: #f2d9c3;
 }
 
-.facebook, .youtube, .twitter, .pinterest, .instagram {
-    display: inline-block;
-    color: #ffffff;
-    height: 25px;
-    width: 25px;
-    font-size: 12px !important;
-    line-height: 27px;
-    text-align: center;
-    border-radius: 50% !important;
-    transition: all 0.2s ease-out 0s !important;
-    margin: 0 3px;
+.facebook,
+.youtube,
+.twitter,
+.pinterest,
+.instagram {
+  display: inline-block;
+  color: #ffffff;
+  height: 25px;
+  width: 25px;
+  font-size: 12px !important;
+  line-height: 27px;
+  text-align: center;
+  border-radius: 50% !important;
+  transition: all 0.2s ease-out 0s !important;
+  margin: 0 3px;
 }
 
 .facebook {
-    background-color: #3b5998;
+  background-color: #3b5998;
 }
 
 .twitter {
-    background-color: #00bdec;
+  background-color: #00bdec;
 }
 
 .instagram {
-    background: linear-gradient(#f9ce34, #ee2a7b,#6228d7); 
+  background: linear-gradient(#f9ce34, #ee2a7b, #6228d7);
 }
 
 .youtube {
-    background-color: #c4302b;
+  background-color: #c4302b;
 }
 
 .pinterest {
-    background-color: #b8242a;
+  background-color: #b8242a;
 }
 
-.facebook:hover, .youtube:hover, .twitter:hover, .pinterest:hover {
-    background-color: black;
+.facebook:hover,
+.youtube:hover,
+.twitter:hover,
+.pinterest:hover {
+  background-color: black;
 }
 
 .instagram:hover {
-    background: black;
+  background: black;
 }
 
 @media screen and (min-width: 480px) {
-    .wrapper {
-        padding: 0 15px;
-    }
+  .wrapper {
+    padding: 0 15px;
+  }
+  .header-account {
+    padding: 20px;
+    width: 20%;
+  }
+  .header-logo {
+    padding: 10px;
+    width: 60%;
+  }
+  .header-shopping {
+    padding: 20px;
+  }
 }
 
 @media only screen and (min-width: 769px) {
-    .footer-logo {
-        width: 25%;
-    }
+  .footer-logo {
+    width: 25%;
+  }
 }
 
 @media only screen and (min-width: 769px) {
-    .footer-thongtin, .footer-sanpham, .footer-lienhe {
-        width: 16.666%;
-    }
+  .footer-thongtin,
+  .footer-sanpham,
+  .footer-lienhe {
+    width: 16.666%;
+  }
 }
