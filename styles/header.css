@@ -179,6 +179,17 @@
   padding-bottom: 40px;
 }
 
+.header-navul-2 {
+  padding: 10px;
+}
+
+.input-field {
+  border: none;
+  height: 37px;
+  outline: none;
+  font-size: 14px;
+}
+
 @keyframes drop-animation {
   0% {
       opacity: 0;
