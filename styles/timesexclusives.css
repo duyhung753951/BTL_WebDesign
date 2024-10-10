@@ -39,6 +39,7 @@
   width: calc(20% - 30px);
   margin: 10px 10px 10px 10px;
   padding: 5px 5px 5px 5px;
+  box-sizing: border-box;
 }
 .wrapper-time::after {
   content: "";
@@ -71,4 +72,27 @@
   display: block;
   background-color: #000;
   color: #ffff;
+}
+section .time {
+  max-width: 1200px;
+}
+@media only screen and (max-width: 768px) {
+  .wrapper-time .product {
+    width: 100%;
+    float: none;
+  }
+  .wrapper-time .product img {
+    width: 100%;
+    height: 100%;
+    margin: 0 20px 0 -13px;
+  }
+  .time {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .wrapper-time h2 {
+    text-align: center;
+    font-size: 20px;
+  }
 }
