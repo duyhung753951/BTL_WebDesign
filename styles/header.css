@@ -5,13 +5,11 @@
   font-size: 16px;
 }
 .header-top {
-  width: 100%;
   padding: 38px 0 37px;
 }
 .header-shop, .header-logo, .header-account {
   float: left;
   font-style: italic;
-  width: 100%;
 }
 .main-menu {
   border-top: 2px solid #000;
@@ -147,7 +145,6 @@
 }
 
 .mega-menu-nav-dropdown {
-  width: 100%;
   padding: 0;
   display: none;
   position: absolute;
@@ -198,5 +195,35 @@
   100% {
       opacity: 1;
       transform: translate(0px, 0px);
+  }
+}
+
+@media only screen and (max-width:768px){
+  .header-account, .header-shop, .header-navul-2, .gohome {
+    display: none;
+  }
+  .header-logo {
+    max-width: fit-content;
+    margin: 0 auto;
+    float: none;
+  }
+  .menu-item {
+    margin: 0 10px;
+  }
+ }
+
+@media only screen and (max-width: 550px) {
+  .nav-item {
+    margin: 0 10px;
+  }
+  .mega-menu-nav-dropdown {
+    width: 90vw;
+    height: 350px;
+    overflow: scroll;
+    top: 100px;
+    left: 20px;
+  }
+  .menu-item {
+    float: none;
   }
 }
