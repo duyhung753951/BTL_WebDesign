@@ -68,29 +68,28 @@ ul, li {
     }
   }
   
-  @media only screen and (min-width: 769px) {
-    .footer-logo {
-        width: 25% !important;
-    }
-    .header-navul-1 {
-        float: left !important;
-    }
-    .footer-thongtin,
-    .footer-sanpham,
-    .footer-lienhe {
-        width: 16.666%;
-    }
-    .header-account, .header-logo {
-        width: 43% !important;
-    }
-    .header-shop {
-        width: 14% !important;
-    }
-    .header-shop a, .header-navul-2 {
-        float: right !important;
-    }
-    .menu-item {
-        width: 25%;
-    }
-  }
-  
+@media only screen and (min-width: 769px) {
+.footer-logo {
+    width: 25% !important;
+}
+.header-navul-1 {
+    float: left !important;
+}
+.footer-thongtin,
+.footer-sanpham,
+.footer-lienhe {
+    width: 16.666%;
+}
+.header-account, .header-logo {
+    width: 43% !important;
+}
+.header-shop {
+    width: 14% !important;
+}
+.header-shop a, .header-navul-2 {
+    float: right !important;
+}
+.menu-item {
+    width: 25%;
+}
+}

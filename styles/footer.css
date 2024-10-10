@@ -16,6 +16,11 @@
   margin-top: 25px;
 }
 
+.footer-logo img {
+  width: 172px;
+  height: 163.3px;
+}
+
 .footer-thongtin,
 .footer-sanpham,
 .footer-lienhe {

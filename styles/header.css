@@ -11,6 +11,12 @@
   float: left;
   font-style: italic;
 }
+
+.header-logo img {
+  width: 172px;
+  height: 163.3px;
+}
+
 .main-menu {
   border-top: 2px solid #000;
   position: relative;
