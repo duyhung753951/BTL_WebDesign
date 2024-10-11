@@ -79,19 +79,21 @@
                             350,000₫
                         </span>
                     </td>
+
                     <td data-label="Số lượng">
                         <div class="quantity-selector">
-                            <button type="button" class="quantity-adjust-btn js-qty__adjust--minus icon-fallback-text" data-id="" data-qty="0">
+                            <button type="button" class="quantity-adjust-btn js-qty__adjust--minus" data-id="item-1">
                                 <span class="icon icon-minus" aria-hidden="true"></span>
                                 <span class="fallback-text">−</span>
                             </button>
-                            <input type="text" class="num-qty" value="1" min="1" data-id="" aria-label="quantity" pattern="[0-9]*" name="updates[]" id="updates_1124982293">
-                            <button type="button" class="quantity-adjust-btn" data-id="" data-qty="11">
+                            <input type="text" class="num-qty" value="1" min="1" data-id="item-1" aria-label="quantity" pattern="[0-9]*" name="updates[]" id="updates_item_1">
+                            <button type="button" class="quantity-adjust-btn js-qty__adjust--plus" data-id="item-1">
                                 <span class="icon icon-plus" aria-hidden="true"></span>
                                 <span class="fallback-text">+</span>
                             </button>
                         </div>
                     </td>
+                    
                     <td data-label="Tổng" class="text-right">
                         <span class="product-total">
                             350,000₫
@@ -128,7 +130,9 @@
 <div id="footer"></div>
 
 <!-- import js script -->
-<script src="js/cart/cart.js" type="text/script"></script>
+<script src="js/cart/cart.js"></script>
+<script src="js/cart/quantity_button.js"></script>
+
 <script>
     // Load the header
     fetch('header.html')

@@ -150,9 +150,10 @@ main {
 }
 
 /* Optional: For Plus/Minus Icons */
-.icon {
-    font-size: 30px;
-    font-weight: bold;
+.fallback-text {
+    font-size: 20px;
+    padding : 10px 10px;
+    margin : 10px 10px;
 }
 
 
