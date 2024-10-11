@@ -1,0 +1,15 @@
+.banner-img {
+    max-width: 100%;
+}
+
+.banner-items {
+    float: left;
+}
+
+.banner-items a {
+    display: block;
+}
+
+.banner-items:last-child a:first-of-type {
+    margin-bottom: 25px;
+}
