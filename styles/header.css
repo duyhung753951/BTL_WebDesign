@@ -89,9 +89,6 @@
 }
 
 .gohome {
-  background: url(/assets/icon/icon-home.png);
-  font-size: 0;
-  display: block;
   height: 40px;
   width: 50px;
 }
@@ -204,8 +201,10 @@
   }
 }
 
+/* RESPONSIVE HEADER */
+
 @media only screen and (max-width:768px){
-  .header-account, .header-shop, .header-navul-2, .gohome {
+  .header-account, .header-shop, .header-navul-2, .go-home {
     display: none;
   }
   .header-logo {
