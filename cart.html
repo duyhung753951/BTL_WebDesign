@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hãng đĩa thế kỷ</title>
+    <link rel="icon" href="./assets/icon/logo-favicon.ico">
+    <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" href="styles/cart.css">
+    
+    <!-- import font -->
+    <link href="https://fonts.cdnfonts.com/css/kelson-bold" rel="stylesheet" />
+
+    <!-- Roboto Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- import social media logo -->
+    <script
+      src="https://kit.fontawesome.com/d904896f95.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<div id="header"></div>
+
+<main>
+    <!-- BreadCrumb -->
+    <div class="breadcrumb-wrapper">
+        <nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
+            <div class="inner">
+                <a href="/" title="Quay lại trang chủ">Trang chủ</a>
+                <span aria-hidden="true">/</span>
+                <span>Giỏ hàng của bạn - Hãng Đĩa Thời Đại (Times Records) | Record label in the Heart of Saigon</span>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Product Information's Form -->
+    <form action="/cart" method="post" novalidate="" class="shopping-cart cart-table-container">
+        <table class="cart-table">
+
+            <thead class="cart-row">
+                <tr>
+                    <th colspan="2" class="text-center">Sản phẩm</th>
+                    <th class="text-center">Giá</th>
+                    <th class="text-center">Số lượng</th>
+                    <th class="text-right">Tổng</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="cart-row">
+
+                    <td data-label="Sản phẩm">
+                        <a href="/products/hua-kim-tuyen-colours-bang-cassette" class="cart__image">
+                            <img src="//product.hstatic.net/1000304920/product/437080201_1117809949335448_8300791482668507769_n_9d23ab7310334b2495546af46ae0c724_medium.jpg" alt="Hứa Kim Tuyền - COLOURS (Frosted Ice Tape) - Băng Cassette">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="/products/hua-kim-tuyen-colours-bang-cassette" class="product-name">
+                            Hứa Kim Tuyền - COLOURS (Frosted Ice Tape) - Băng Cassette
+                        </a>
+                        <br>
+                        <br>
+                        <br>
+                        <small>Frosted Ice</small>             
+                        <p>Hãng Đĩa Thời Đại</p>
+                        <a href="/cart/change?line=1&amp;quantity=0" class="cart-remove-btn">
+                            <small>Xóa</small>
+                        </a>
+                    </td>
+                    <td data-label="Giá">
+                        <span class="product-price">
+                            350,000₫
+                        </span>
+                    </td>
+                    <td data-label="Số lượng">
+                        <div class="quantity-selector">
+                            <button type="button" class="quantity-adjust-btn js-qty__adjust--minus icon-fallback-text" data-id="" data-qty="0">
+                                <span class="icon icon-minus" aria-hidden="true"></span>
+                                <span class="fallback-text">−</span>
+                            </button>
+                            <input type="text" class="num-qty" value="1" min="1" data-id="" aria-label="quantity" pattern="[0-9]*" name="updates[]" id="updates_1124982293">
+                            <button type="button" class="quantity-adjust-btn" data-id="" data-qty="11">
+                                <span class="icon icon-plus" aria-hidden="true"></span>
+                                <span class="fallback-text">+</span>
+                            </button>
+                        </div>
+                    </td>
+                    <td data-label="Tổng" class="text-right">
+                        <span class="product-total">
+                            350,000₫
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <div class="cart-footer">
+            <div class="cart-footer-item">
+                <label for="CartSpecialInstructions">Ghi chú đơn hàng</label>
+                <textarea name="note" class="input-full" id="CartSpecialInstructions"></textarea>
+            </div>
+
+            <div class="cart-footer-item">
+                <p>
+                    <span class="subtotal-label">Tổng</span>
+                    <span class="h3 subtotal-amount">350,000₫</span>
+                </p>
+                <p><em>Giao hàng &amp; tính thuế khi bán hàng</em></p>
+                <input type="submit" name="update" class="update-cart-btn" value="Cập nhật giỏ hàng">
+                <input type="submit" name="checkout" class="pay-btn" value="Thanh toán">
+            </div>
+        </div>
+        
+    </form>
+
+</main>
+
+
+ <!-- FOOTER -->
+<div id="footer"></div>
+
+<!-- import js script -->
+<script src="js/cart.js" type="text/script"></script>
+<script>
+    // Load the header
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+    });
+    // load the footer
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

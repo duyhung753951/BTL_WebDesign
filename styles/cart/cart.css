@@ -1,0 +1,236 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 200%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* the Breadcrumb */
+.breadcrumb-wrapper {
+    padding: 15px 15px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    border: none;
+}
+
+.breadcrumb {
+    text-align: center;
+    font-size: 20px;
+}
+
+.breadcrumb .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #7a8794;
+    font-weight: 500;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline; 
+}
+
+
+.breadcrumb span[aria-hidden="true"] {
+    margin: 0 5px;
+    color: #666;
+}
+
+.breadcrumb span:last-child {
+    color: #1e1515;
+    font-weight: 400;
+    text-transform: none;
+    font-style: italic;
+}
+
+.breadcrumb-wrapper nav[aria-label="breadcrumbs"] {
+    white-space: nowrap; /* Prevent long text from wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* End BreadCrumb */
+
+
+
+/* main */
+main {
+    flex : 1;
+}
+
+
+/* title */
+.cart-table {
+    border-collapse: collapse;  /* Ensure borders are continuous */
+    width: 90%; 
+    margin : 0 auto;
+}
+
+.cart-table th {
+    font-family: 'Roboto', 'Arial';
+    font-weight: 300;
+    font-size: 20px;
+    padding: 50px 20px 20px 20px;
+    border-bottom: 1px solid #000000;
+}
+
+.cart-table td {
+    padding: 15px 15px;
+    text-align: left;
+    border-bottom: 1px solid #000000;
+}
+
+.cart-remove-btn {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* Product review image */
+.cart__image img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 4px;
+}
+
+
+/* Text Style for Product review */
+.product-name {
+    font-size: 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+.product-name:hover {
+    text-decoration: underline;
+}
+
+
+/* Quantity Selector Container */
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+    overflow: hidden; 
+    width: auto; 
+}
+
+/* Minus and Plus Buttons */
+.quantity-adjust-btn {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.quantity-adjust-btn:hover {
+    background-color: #f0f0f0; /* Slight hover effect */
+}
+
+/* Quantity Input */
+.num-qty {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin: 0; 
+    font-size: 16px;
+    opacity: 0.5;
+    border : 1px solid black
+}
+
+/* Optional: For Plus/Minus Icons */
+.icon {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+/* Buttons */
+.update-cart-btn,
+.pay-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.update-cart-btn {
+    background-color: #f2d9c3; /* Green for checkout */
+    color: #110c0c;
+}
+.update-cart-btn:hover {
+    opacity: 0.4; 
+}
+
+.pay-btn {
+    background-color: #000000; /* Blue for update */
+    color: #fff;
+}
+.pay-btn:hover {
+    opacity: 0.4; 
+}
+
+
+/* Cart Footer Styles */
+.cart-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin : 0 auto;
+    padding: 10px;
+}
+
+.cart-footer-item {
+    flex: 1;
+    margin-right: 50px;
+}
+.cart-footer-item:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+#CartSpecialInstructions {
+    width: 600px;  
+    height: 150px; 
+    /* resize: none;  Optional: Disable resizing (users won't be able to drag to resize) */
+}
+
+
+/* Subtotal Styles */
+.subtotal-label {
+    font-weight: 300;
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+
+.subtotal-amount {
+    font-size: 25px;
+    color: #333;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .cart-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .cart-footer-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+
