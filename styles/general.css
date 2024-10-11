@@ -12,6 +12,10 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'kelsonBold', serif;
     font-size: 16px;
@@ -39,6 +43,20 @@ h3 {
     margin: 0 auto;
 }
 
+.wrapper::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.padding-item {
+    padding-left: 30px;
+}
+
+.margin-container {
+    margin-left: -30px;
+}
+
 /* reset a tag */
 a {
     text-decoration: none;
@@ -51,13 +69,6 @@ ul, li {
     margin: 0;
     padding: 0;
 }
-
-.wrapper::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 
 @media screen and (min-width: 480px) {
     .wrapper {
