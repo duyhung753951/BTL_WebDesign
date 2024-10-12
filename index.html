@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hãng đĩa thế kỷ</title>
-    <link rel="icon" href="./assets/icon/logo-favicon.ico">
-    <link rel="stylesheet" href="./styles/general.css">
-    <link rel="stylesheet" href="./styles/section-slider.css">
-    <link rel="stylesheet" href="./styles/timesexclusives.css">
-    <link rel="stylesheet" href="./styles/multi-banner.css">
+    <link rel="icon" href="./assets/icon/logo-favicon.ico" />
+    <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/section-slider.css" />
+    <link rel="stylesheet" href="./styles/timesexclusives.css" />
+    <link rel="stylesheet" href="./styles/multi-banner.css" />
     <!-- import font -->
     <link href="https://fonts.cdnfonts.com/css/kelson-bold" rel="stylesheet" />
     <!-- import social media logo -->
     <script>
-      src="https://kit.fontawesome.com/d904896f95.js"
-      crossorigin="anonymous"
+      src = "https://kit.fontawesome.com/d904896f95.js";
+      crossorigin = "anonymous";
     </script>
   </head>
   <body>
@@ -23,25 +23,35 @@
     <div id="header"></div>
 
     <!-- MAIN -->
-     <!-- Image Slider -->
+    <!-- Image Slider -->
     <div class="main">
       <section>
         <div class="wrapper gallery-wrap">
           <div class="gallery">
             <div>
-              <span><img src="./assets/slides/slide_logo_1.jpg" class="slide-img"></span>
+              <span
+                ><img src="./assets/slides/slide_logo_1.jpg" class="slide-img"
+              /></span>
             </div>
             <div>
-              <span><img src="./assets/slides/slide_logo_2.jpg" class="slide-img"></span>
+              <span
+                ><img src="./assets/slides/slide_logo_2.jpg" class="slide-img"
+              /></span>
             </div>
             <div>
-              <span><img src="./assets/slides/slide_logo_3.jpg" class="slide-img"></span>
+              <span
+                ><img src="./assets/slides/slide_logo_3.jpg" class="slide-img"
+              /></span>
             </div>
             <div>
-              <span><img src="./assets/slides/slide_logo_4.jpg" class="slide-img"></span>
+              <span
+                ><img src="./assets/slides/slide_logo_4.jpg" class="slide-img"
+              /></span>
             </div>
             <div>
-              <span><img src="./assets/slides/slide_logo_5.jpg" class="slide-img"></span>
+              <span
+                ><img src="./assets/slides/slide_logo_5.jpg" class="slide-img"
+              /></span>
             </div>
           </div>
           <div class="slider-btn">
@@ -51,112 +61,221 @@
         </div>
       </section>
       <!-- BANNER -->
-       <section>
+      <section>
         <div class="wrapper">
           <div class="multi-banner margin-container">
             <div class="banner-items col-6 padding-item">
-              <a href="#"><img class="banner-img " src="./assets/banners/banner_3_image_1.jpg" alt=""></a>
+              <a href="#"
+                ><img
+                  class="banner-img"
+                  src="./assets/banners/banner_3_image_1.jpg"
+                  alt=""
+              /></a>
             </div>
             <div class="banner-items col-3 padding-item">
-              <a href="#"><img class="banner-img" src="./assets/banners/banner_3_image_2.jpg" alt=""></a>
+              <a href="#"
+                ><img
+                  class="banner-img"
+                  src="./assets/banners/banner_3_image_2.jpg"
+                  alt=""
+              /></a>
             </div>
             <div class="banner-items col-3 padding-item">
-              <a href="#"><img class="banner-img" src="./assets/banners/banner_3_image_3.jpg" alt=""></a>
-              <a href="#"><img class="banner-img" src="./assets/banners/banner_3_image_3_2.jpg" alt=""></a>
+              <a href="#"
+                ><img
+                  class="banner-img"
+                  src="./assets/banners/banner_3_image_3.jpg"
+                  alt=""
+              /></a>
+              <a href="#"
+                ><img
+                  class="banner-img"
+                  src="./assets/banners/banner_3_image_3_2.jpg"
+                  alt=""
+              /></a>
             </div>
           </div>
         </div>
-       </section>
+      </section>
 
       <!-- TIMES EXCLUSIVES -->
       <section>
         <div class="time">
           <div class="wrapper">
-            <h2 class="title"> TIMES EXCLUSIVES / HÃNG ĐĨA THỜI ĐẠI PHÁT HÀNH</h2>
+            <h2 class="title">
+              TIMES EXCLUSIVES / HÃNG ĐĨA THỜI ĐẠI PHÁT HÀNH
+            </h2>
             <div class="wrapper-product">
-              <div class="product"> 
-                <img src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/ha-tran-tran-tien-08-repacked-edition-dia-cd_1_ed9294e80a0744a6aedd151f432f86fb_grande.jpg" alt="product_item" class="img_product"> 
-                <h4 class="product_name">Hà Trần Productions - TrẦn TiẾn (Repacked Edition) - Đĩa CD</h4>
+              <div class="product">
+                <img
+                  src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/ha-tran-tran-tien-08-repacked-edition-dia-cd_1_ed9294e80a0744a6aedd151f432f86fb_grande.jpg"
+                  alt="product_item"
+                  class="img_product"
+                />
+                <h4 class="product_name">
+                  Hà Trần Productions - TrẦn TiẾn (Repacked Edition) - Đĩa CD
+                </h4>
                 <span class="price">350,000₫</span>
-                <form action="" class="add_to_cart">
-                  <button class="add_to_cart">THÊM VÀO GIỎ<input type="submit"></button>
+                <form method="post" action="/cart/add" class="add-to-cart">
+                  <input type="hidden" name="id" value="1129006004" />
+                  <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                  <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
                 </form>
               </div>
-              <div class="product"> 
-                <img src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/amee-mongmee-mini-album_bed1ee197c8d4b49b54341920dd68e7e_grande.jpg" alt="product_item" class="img_product"> 
-                <h4 class="product_name">AMEE - MỘNGMEE (The Mini Album) - Đĩa CD</h4>
+              <div class="product">
+                <img
+                  src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/amee-mongmee-mini-album_bed1ee197c8d4b49b54341920dd68e7e_grande.jpg"
+                  alt="product_item"
+                  class="img_product"
+                />
+                <h4 class="product_name">
+                  AMEE - MỘNGMEE (The Mini Album) - Đĩa CD
+                </h4>
                 <span class="price">350,000₫</span>
-                <form action="" class="add_to_cart">
-                  <button class="add_to_cart">THÊM VÀO GIỎ<input type="submit"></button>
+                <form method="post" action="/cart/add" class="add-to-cart">
+                  <input type="hidden" name="id" value="1129006004" />
+                  <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                  <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
                 </form>
               </div>
-              <div class="product"> 
-                <img src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/phung_khanh_linh_uoc_anh_tan_nat_con_tim-cd_69f1a4a525b7456dae7ca39aeaf8fea6_grande.jpg" alt="product_item" class="img_product"> 
-                <h4 class="product_name">Phùng Khánh Linh - ƯỚC ANH TAN NÁT CON TIM (CD Single) - Đĩa CD</h4>
+              <div class="product">
+                <img
+                  src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/phung_khanh_linh_uoc_anh_tan_nat_con_tim-cd_69f1a4a525b7456dae7ca39aeaf8fea6_grande.jpg"
+                  alt="product_item"
+                  class="img_product"
+                />
+                <h4 class="product_name">
+                  Phùng Khánh Linh - ƯỚC ANH TAN NÁT CON TIM (CD Single) - Đĩa
+                  CD
+                </h4>
                 <span class="price">250,000₫</span>
-                <form action="" class="add_to_cart">
-                  <button class="add_to_cart">THÊM VÀO GIỎ<input type="submit"></button>
+                <form method="post" action="/cart/add" class="add-to-cart">
+                  <input type="hidden" name="id" value="1129006004" />
+                  <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                  <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
                 </form>
               </div>
-              <div class="product"> 
-                <img src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/quang-dung_yeu-em-giua-doi-quen-lang_cd-cover_1909b4abb15148e9a9148ecc3e170371_grande.jpg" alt="product_item" class="img_product"> 
-                <h4 class="product_name">Quang Dũng - Yêu Em Giữa Đời Quên Lãng (Limited Boxset) - Đĩa CD</h4>
+              <div class="product">
+                <img
+                  src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/quang-dung_yeu-em-giua-doi-quen-lang_cd-cover_1909b4abb15148e9a9148ecc3e170371_grande.jpg"
+                  alt="product_item"
+                  class="img_product"
+                />
+                <h4 class="product_name">
+                  Quang Dũng - Yêu Em Giữa Đời Quên Lãng (Limited Boxset) - Đĩa
+                  CD
+                </h4>
                 <span class="price">500,000₫</span>
-                <form action="" class="add_to_cart">
-                  <button class="add_to_cart">THÊM VÀO GIỎ<input type="submit"></button>
+                <form method="post" action="/cart/add" class="add-to-cart">
+                  <input type="hidden" name="id" value="1129006004" />
+                  <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                  <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
                 </form>
               </div>
-              <div class="product"> 
-                <img src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/img_8288_bf57eebb433142ac87e53f31d04d73c0_grande.jpg" alt="product_item" class="img_product">
-                <h4 class="product_name">Thương Võ - Không Phải Đồ Ăn (CD Single) - Đĩa CD</h4>
+              <div class="product">
+                <img
+                  src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/img_8288_bf57eebb433142ac87e53f31d04d73c0_grande.jpg"
+                  alt="product_item"
+                  class="img_product"
+                />
+                <h4 class="product_name">
+                  Thương Võ - Không Phải Đồ Ăn (CD Single) - Đĩa CD
+                </h4>
                 <span class="price">200,000₫</span>
-                <form action="" class="add_to_cart">
-                  <button class="add_to_cart">THÊM VÀO GIỎ<input type="submit"></button>
+                <form method="post" action="/cart/add" class="add-to-cart">
+                  <input type="hidden" name="id" value="1129006004" />
+                  <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                  <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
                 </form>
               </div>
             </div>
           </div>
-          
+
           <div class="wrapper">
             <div class="wrapper-product">
-              <div class="product"> 
-                <img src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/img_8775_027ea05209a54b16b3a32e14d8782fac_grande.jpg" alt="product_item" class="img_product"> 
-                <h4 class="product_name">CHENG - CHẬP CHENG (DEBUT ALBUM) - Đĩa CD</h4>
+              <div class="product">
+                <img
+                  src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/img_8775_027ea05209a54b16b3a32e14d8782fac_grande.jpg"
+                  alt="product_item"
+                  class="img_product"
+                />
+                <h4 class="product_name">
+                  CHENG - CHẬP CHENG (DEBUT ALBUM) - Đĩa CD
+                </h4>
                 <span class="price">250,000₫</span>
-                <form action="" class="add_to_cart">
-                  <button class="add_to_cart">THÊM VÀO GIỎ<input type="submit"></button>
+                <form method="post" action="/cart/add" class="add-to-cart">
+                  <input type="hidden" name="id" value="1129006004" />
+                  <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                  <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
                 </form>
               </div>
-              <div class="product"> 
-                <img src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/ha_tran-doi_thoai_06-communication-06_a_da3064c0d0c748a2802e38440e5caec3_grande.jpg" alt="product_item" class="img_product"> 
-                <h4 class="product_name">Hà Trần - Đối Thoại '06 (Repacked Edition) - Đĩa CD</h4>
+              <div class="product">
+                <img
+                  src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/ha_tran-doi_thoai_06-communication-06_a_da3064c0d0c748a2802e38440e5caec3_grande.jpg"
+                  alt="product_item"
+                  class="img_product"
+                />
+                <h4 class="product_name">
+                  Hà Trần - Đối Thoại '06 (Repacked Edition) - Đĩa CD
+                </h4>
                 <span class="price">350,000₫</span>
-                <form action="" class="add_to_cart">
-                  <button class="add_to_cart">THÊM VÀO GIỎ<input type="submit"></button>
+                <form method="post" action="/cart/add" class="add-to-cart">
+                  <input type="hidden" name="id" value="1129006004" />
+                  <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                  <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
                 </form>
               </div>
-              <div class="product"> 
-                <img src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/img_8774_5c9669209bd6476c9a8cdc996d7ee5c7_grande.jpg" alt="product_item" class="img_product"> 
-                <h4 class="product_name">HAN SARA - I SARA YOU (EP) - Đĩa CD</h4>
+              <div class="product">
+                <img
+                  src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/img_8774_5c9669209bd6476c9a8cdc996d7ee5c7_grande.jpg"
+                  alt="product_item"
+                  class="img_product"
+                />
+                <h4 class="product_name">
+                  HAN SARA - I SARA YOU (EP) - Đĩa CD
+                </h4>
                 <span class="price">250,000₫</span>
-                <form action="" class="add_to_cart">
-                  <button class="add_to_cart">THÊM VÀO GIỎ<input type="submit"></button>
+                <form method="post" action="/cart/add" class="add-to-cart">
+                  <input type="hidden" name="id" value="1129006004" />
+                  <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                  <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
                 </form>
               </div>
-              <div class="product"> 
-                <img src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/lowG.png" alt="product_item" class="img_product"> 
+              <div class="product">
+                <img
+                  src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/lowG.png"
+                  alt="product_item"
+                  class="img_product"
+                />
+                <div class="product_action">
+                  <a href="#" class="infor_product"
+                    ><i class="fa-regular fa-eye"></i
+                  ></a>
+                </div>
                 <h4 class="product_name">tlinh x Low G - FLVR (EP) - Đĩa CD</h4>
                 <span class="price">380,000₫</span>
-                <form action="" class="add_to_cart">
-                  <button class="add_to_cart">THÊM VÀO GIỎ<input type="submit"></button>
+                <form method="post" action="/cart/add" class="add-to-cart">
+                  <input type="hidden" name="id" value="1129006004" />
+                  <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                  <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
                 </form>
               </div>
-              <div class="product"> 
-                <img src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/lan_nha.png" alt="product_item" class="img_product">
-                <h4 class="product_name">Lân Nhã - Những Lời Thương Gửi Muộn (2-Track CD Single) - Đĩa CD</h4>
+              <div class="product">
+                <img
+                  src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/lan_nha.png"
+                  alt="product_item"
+                  class="img_product"
+                />
+                <h4 class="product_name">
+                  Lân Nhã - Những Lời Thương Gửi Muộn (2-Track CD Single) - Đĩa
+                  CD
+                </h4>
                 <span class="price">250,000₫</span>
-                <form action="" class="add_to_cart">
-                  <button class="add_to_cart">THÊM VÀO GIỎ<input type="submit"></button>
+                <form method="post" action="/cart/add" class="add-to-cart">
+                  <input type="hidden" name="id" value="1129006004" />
+                  <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                  <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                </form>
                 </form>
               </div>
             </div>
@@ -172,17 +291,17 @@
     <script src="./js/slider.js"></script>
     <script>
       // Load the header
-      fetch('header.html')
-          .then(response => response.text())
-          .then(data => {
-              document.getElementById('header').innerHTML = data;
-      });
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
       // load the footer
-      fetch('footer.html')
-          .then(response => response.text())
-          .then(data => {
-              document.getElementById('footer').innerHTML = data;
-      });
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
     </script>
   </body>
 </html>
