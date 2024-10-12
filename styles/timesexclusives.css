@@ -58,22 +58,23 @@
   line-height: 32px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #0000;
+  color: #000;
   font-weight: normal;
   transition: all ease 300ms;
-  background-color: #000;
-  visibility: hidden;
+  cursor: pointer;
 }
-.wrapper .product:hover form {
-  visibility: unset;
+
+.add-to-cart button {
   background-color: #fff;
+  visibility: hidden;
+  transition: all ease 300ms;
+  background-color: #fff;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.add_to_cart form:hover p {
-  display: block;
-  background-color: #000;
-  color: #ffff;
+.product:hover button {
+  visibility: unset;
 }
-section .time {
+.add-to-cart section .time {
   max-width: 1200px;
 }
 @media only screen and (max-width: 768px) {
