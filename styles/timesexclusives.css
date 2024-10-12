@@ -18,6 +18,11 @@
   text-transform: uppercase;
   font-family: kelsonBold, serif;
 }
+.wrapper h2 {
+  text-align: left;
+  font-size: 20px;
+  font-weight: lighter;
+}
 .time .product h4 {
   color: #000;
   background: transparent;
@@ -68,7 +73,7 @@
 }
 .back_img {
   position: absolute;
-  width: 90%;
+  width: 88%;
   top: 0;
   right: 0;
   text-align: center;
@@ -111,10 +116,11 @@
   .wrapper h2 {
     text-align: center;
     font-size: 20px;
+    font-weight: lighter;
   }
   .wrapper .product .back_img {
-    width: 93%;
-    height: 81%;
+    width: 94.7%;
+    height: 85.5%;
     margin: 0;
   }
 }
