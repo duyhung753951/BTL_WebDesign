@@ -1,6 +1,7 @@
 .gallery {
     display: flex;
     overflow-x: scroll;
+    scroll-behavior: smooth;
 }
 
 .gallery-wrap {
@@ -15,7 +16,7 @@
     flex: none;
 }
 
-.gallery div img {
+.slide-img {
     width: 100%;
 }
 
