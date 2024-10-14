@@ -8,6 +8,8 @@
 }
 .time .product img {
   max-width: 100%;
+  object-fit: cover;
+  transition: opacity 300ms ease-in-out;
 }
 .time .title {
   letter-spacing: 5px;
@@ -45,6 +47,8 @@
   width: 20%;
   padding-left: 30px;
   box-sizing: border-box;
+  position: relative;
+  margin-bottom: 30px;
 }
 .wrapper::after {
   content: "";
@@ -65,25 +69,24 @@
   text-transform: uppercase;
   color: #000;
   font-weight: normal;
-  transition: all ease 300ms;
   cursor: pointer;
 }
-.product {
-  position: relative;
-}
+
 .back_img {
   position: absolute;
-  width: 88%;
+  width: calc(100% - 30px);
   top: 0;
   right: 0;
   text-align: center;
   margin: auto;
   visibility: hidden;
-  transition: all ease 300ms;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out, visibility 0ms 300ms;
 }
 .product:hover .back_img {
-  visibility: unset;
-  transition: all ease 300ms;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 300ms ease-in-out, visibility 0ms 0ms;
 }
 .add-to-cart button {
   background-color: #fff;
@@ -105,7 +108,6 @@
   }
   .wrapper .product img {
     width: 100%;
-    height: 100%;
     margin: 0;
   }
   .time {
@@ -119,8 +121,7 @@
     font-weight: lighter;
   }
   .wrapper .product .back_img {
-    width: 94.7%;
-    height: 85.5%;
+    width: calc(100% - 30px);
     margin: 0;
   }
 }
