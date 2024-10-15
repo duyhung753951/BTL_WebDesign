@@ -1,7 +1,7 @@
 let arrivals = document.querySelector(".slider-product-2");
 let left = document.getElementById("left");
 let right = document.getElementById("right");
-
+let isDrag = false
 const scrollNumber = arrivals.clientWidth / 5;
 let count = 0;
 
@@ -26,21 +26,21 @@ function previousSlide() {
 }
 
 const dragStart2 = (e) => {
-    isDragging = true;
-    arrivals.classList.add("dragging");
-    startX = e.pageX;
-    startScrollLeft2 = arrivals.scrollLeft;
+  isDrag = true;
+  arrivals.classList.add("dragging");
+  startX = e.pageX;
+  startScrollLeft2 = arrivals.scrollLeft;
 }
   
 const dragging2 = (e) => {
-    if(!isDragging) return;
-    const dragDistance2 = e.pageX - startX;
-    arrivals.scrollLeft = startScrollLeft2 - dragDistance2;
+  if(!isDrag) return;
+  const dragDistance2 = e.pageX - startX;
+  arrivals.scrollLeft = startScrollLeft2 - dragDistance2;
 }
   
 const dragStop2 = () => {
-    isDragging = false;
-    arrivals.classList.remove("dragging");
+  isDrag = false;
+  arrivals.classList.remove("dragging");
 }
 
   
