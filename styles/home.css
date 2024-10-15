@@ -14,6 +14,15 @@
   position: relative;
   top: -5px;
 }
+.nav {
+  width: 50%;
+  margin: auto;
+}
+.nav::after {
+  content: "";
+  clear: both;
+  display: block;
+}
 .wrapper::after {
   content: "";
   clear: both;
@@ -30,14 +39,19 @@ section::after {
   text-align: center;
   line-height: 50px;
   text-transform: uppercase;
-  padding: 0 30px;
+  padding: 0 30px 0 30px;
   margin: 10px;
 }
 .nav_font {
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 10px;
+  font-weight: 800;
   color: #faad68;
   font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: normal;
+}
+.nav_font:hover {
+  color: black;
+  opacity: 0.5;
 }
 .nav img {
   width: 90px;
