@@ -1,7 +1,7 @@
 let arrivals = document.querySelector(".slider-product-2");
 let left = document.getElementById("left");
 let right = document.getElementById("right");
-let isDrag = false
+let isDrag = false;
 const scrollNumber = arrivals.clientWidth / 5;
 let count = 0;
 
