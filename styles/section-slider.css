@@ -2,6 +2,7 @@
     display: flex;
     overflow-x: scroll;
     scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 }
 
 .gallery-wrap {
@@ -11,9 +12,8 @@
 
 .gallery div {
     width: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto;
     flex: none;
+    scroll-snap-align: start;
 }
 
 .slide-img {
@@ -49,8 +49,8 @@
     left: 15px;
 }
 
-#preBtn:hover, #nextBtn:hover {
-    background-color: rgba(0,0,0,0.8);
+.slider-btn div:hover i::before {
+    color: rgba(0,0,0,0.8);
 }
 
 

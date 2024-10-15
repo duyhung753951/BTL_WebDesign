@@ -9,19 +9,25 @@ let isDragging = false, startX, startScrollLeft, totalDragDistance = 0;
 nextBtn.addEventListener('click', nextSlide);
 function nextSlide(){
   scrollContainer.style.scrollBehavior = "smooth";
-  if(counter >= totalItems){
+  
+  // Kiểm tra nếu cuộn đến cuối bộ sưu tập
+  if (scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth) {
     scrollContainer.scrollLeft = 0; // Quay về đầu
-    counter = 0; // Reset counter
+  } else {
+    scrollContainer.scrollLeft += scrollAmount;
   }
-  scrollContainer.scrollLeft += scrollAmount;
-  counter++;
 }
 
 preBtn.addEventListener('click', previousSlide);
 function previousSlide(){
   scrollContainer.style.scrollBehavior = "smooth";
-  scrollContainer.scrollLeft -= scrollAmount;
-  counter--;
+  
+  // Kiểm tra nếu cuộn đến đầu bộ sưu tập
+  if (scrollContainer.scrollLeft === 0) {
+    scrollContainer.scrollLeft = scrollContainer.scrollWidth; // Quay về cuối
+  } else {
+    scrollContainer.scrollLeft -= scrollAmount;
+  }
 }
 
 function autoSliding(){
@@ -64,18 +70,14 @@ const dragStop = () => {
   scrollContainer.classList.remove("dragging");
   
   // Xác định xem người dùng đã kéo đủ xa để cuộn sang phần tử kế tiếp hoặc không
-  if (Math.abs(totalDragDistance) > scrollAmount / 10) {
-    if (totalDragDistance < 0 && counter < totalItems - 1) {
+  if (Math.abs(totalDragDistance) > scrollAmount / 20) {
+    if (totalDragDistance < 0) {
       // Kéo sang phải, cuộn đến phần tử tiếp theo
       nextSlide();
-    } else if (totalDragDistance > 0 && counter > 0) {
+    } else if (totalDragDistance > 0 ) {
       // Kéo sang trái, cuộn về phần tử trước
       previousSlide();
     }
-  } else {
-    // Không kéo đủ xa, giữ nguyên vị trí
-    scrollContainer.style.scrollBehavior = "smooth";
-    scrollContainer.scrollLeft = startScrollLeft;
   }
 }
 
