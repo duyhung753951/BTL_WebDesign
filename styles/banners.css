@@ -21,12 +21,16 @@
   margin: 40px 0 40px 0;
 }
 
-.multi-banner div.banner-items {
+.first-banner div.banner-items {
   width: 25%;
 }
 
-.multi-banner div.banner-items:first-of-type {
+.first-banner div.banner-items:first-of-type {
   width: 50%;
+}
+
+.third-banner div.banner-items {
+  width: 33.33%;
 }
 
 .banner-img:hover {
