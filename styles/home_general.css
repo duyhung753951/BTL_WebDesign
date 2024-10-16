@@ -113,9 +113,6 @@ li {
 }
 
 @media screen and (min-width: 480px) {
-  /* .wrapper {
-    padding: 0 15px;
-  } */
   .header-shopping {
     padding: 20px;
   }
