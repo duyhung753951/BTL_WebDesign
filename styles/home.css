@@ -6,10 +6,6 @@
 body {
   background-color: #e73c3c;
 }
-/* .header {
-  background-color: #e73c3c;
-  height: 80px;
-} */
 .header .wrapper .nav li:first-child {
   float: left;
   margin: 0;
@@ -66,11 +62,8 @@ section h1 {
 }
 .nav img {
   width: 90px;
-  height: px;
 }
-/* .wrapper .wrapper_video {
-  padding: 0;
-} */
+
 video {
   height: 100%;
   width: 100%;
@@ -142,13 +135,51 @@ video {
   filter: alpha(opacity = 80);
   transform: scale3d(1.1, 1.1, 1);
 }
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+  .header .wrapper .nav li {
+    float: right;
+    padding: 0 20px 0 20px;
+  }
+  .nav img {
+    width: 90px;
+    margin-left: 30px;
+  }
+  .nav {
+    margin: 0;
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 900px) {
   .carousel img {
     width: calc(100% / 2);
+  }
+  .header .wrapper .nav li {
+    float: right;
+    padding: 0 20px 0 20px;
+  }
+  .nav img {
+    width: 90px;
+    margin-left: 30px;
+  }
+  .nav {
+    margin: 0;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 550px) {
   .carousel img {
     width: calc(100%);
+  }
+  .header .wrapper .nav li {
+    float: right;
+    padding: 0;
+  }
+  .nav img {
+    width: 90px;
+    margin-left: 30px;
+  }
+  .nav {
+    margin: 0;
+    width: 100%;
   }
 }
