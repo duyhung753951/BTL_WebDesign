@@ -8,6 +8,7 @@
 .slider-product-2 div {
     flex: none;
     scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .slider-product-2::-webkit-scrollbar {
@@ -21,11 +22,11 @@
     width: 30px;
 }
 
-#right {
+.right {
     right: 0px;
 }
 
-#left {
+.left {
     right: 50px;
     border-right: 1px solid #e1e1e1;
 }

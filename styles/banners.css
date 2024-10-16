@@ -1,5 +1,5 @@
 .banner-img {
-  max-width: 100%;
+  width: 100%;
   transition: opacity 1s ease 0s, transform 1s ease 0s;
   opacity: 1;
 }
@@ -21,8 +21,26 @@
   margin: 40px 0 40px 0;
 }
 
+.multi-banner div.banner-items {
+  width: 25%;
+}
+
+.multi-banner div.banner-items:first-of-type {
+  width: 50%;
+}
+
 .banner-img:hover {
   opacity: 0.8;
   filter: alpha(opacity = 80);
   transform: scale3d(1.1, 1.1, 1);
+}
+
+@media only screen and (max-width: 600px) {
+  .banner-items {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+  .banner-items:last-child a:first-of-type {
+    margin-bottom: 10px;
+  }
 }

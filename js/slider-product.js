@@ -1,49 +1,53 @@
-let arrivals = document.querySelector(".slider-product-2");
-let left = document.getElementById("left");
-let right = document.getElementById("right");
+let arrivals = document.querySelectorAll(".slider-product-2");
+let leftButtons = document.querySelectorAll(".left");
+let rightButtons = document.querySelectorAll(".right");
 let isDrag = false;
-const scrollNumber = arrivals.clientWidth / 5;
+const scrollNumber = arrivals[0].clientWidth / 5;
 let count = 0;
 
-right.addEventListener('click', nextSlides);
-function nextSlides() {
-  // Kiểm tra nếu cuộn đến cuối bộ sưu tập
-  if (arrivals.scrollLeft + arrivals.clientWidth >= arrivals.scrollWidth) {
-    arrivals.scrollLeft = 0; // Quay về đầu
-  } else {
-    arrivals.scrollLeft += scrollNumber;
-  }
-}
+arrivals.forEach((slider, index) => {
 
-left.addEventListener('click', previousSlide);
-function previousSlide() {
-  // Kiểm tra nếu cuộn về đầu bộ sưu tập
-  if (arrivals.scrollLeft === 0) {
-    arrivals.scrollLeft = arrivals.scrollWidth; // Quay về cuối
-  } else {
-    arrivals.scrollLeft -= scrollNumber;
-  }
-}
+  // Lấy nút left và right tương ứng với slider hiện tại
+  let left = leftButtons[index];
+  let right = rightButtons[index];
 
-const dragStart2 = (e) => {
-  isDrag = true;
-  arrivals.classList.add("dragging");
-  startX = e.pageX;
-  startScrollLeft2 = arrivals.scrollLeft;
-}
-  
-const dragging2 = (e) => {
-  if(!isDrag) return;
-  const dragDistance2 = e.pageX - startX;
-  arrivals.scrollLeft = startScrollLeft2 - dragDistance2;
-}
-  
-const dragStop2 = () => {
-  isDrag = false;
-  arrivals.classList.remove("dragging");
-}
+  // Sự kiện click cho nút 'right'
+  right.addEventListener('click', function() {
+    // Kiểm tra nếu cuộn đến cuối bộ sưu tập
+    if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
+      slider.scrollLeft = 0; // Quay về đầu
+    } else {
+      slider.scrollLeft += scrollNumber;
+    }
+  });
 
-  
-arrivals.addEventListener("mousedown", dragStart2);
-arrivals.addEventListener("mousemove", dragging2);
-document.addEventListener("mouseup", dragStop2);
+  // Sự kiện click cho nút 'left'
+  left.addEventListener('click', function() {
+    // Kiểm tra nếu cuộn về đầu bộ sưu tập
+    if (slider.scrollLeft === 0) {
+      slider.scrollLeft = slider.scrollWidth; // Quay về cuối
+    } else {
+      slider.scrollLeft -= scrollNumber;
+    }
+  });
+
+  // Sự kiện kéo chuột
+  slider.addEventListener("mousedown", function(e) {
+    isDrag = true;
+    slider.classList.add("dragging");
+    startX = e.pageX;
+    startScrollLeft2 = slider.scrollLeft;
+  });
+
+  slider.addEventListener("mousemove", function(e) {
+    if (!isDrag) return;
+    const dragDistance2 = e.pageX - startX;
+    slider.scrollLeft = startScrollLeft2 - dragDistance2;
+  });
+
+  document.addEventListener("mouseup", function() {
+    isDrag = false;
+    slider.classList.remove("dragging");
+  });
+
+});

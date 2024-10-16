@@ -41,6 +41,7 @@ h3 {
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 7.5px
 }
 
 .wrapper::after {
