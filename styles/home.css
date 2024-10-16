@@ -1,11 +1,16 @@
+body {
+  background-color: #e73c3c;
+  font-family: "Fredoka One", cursive;
+}
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+/* navigation bar */
 .wrapper .wrapper_nav {
   width: 100%;
   padding: 0 20px 0 20px;
   height: 80px;
 }
-body {
-  background-color: #e73c3c;
-}
+
 .header .wrapper .nav li:first-child {
   float: left;
   margin: 0;
@@ -13,6 +18,7 @@ body {
   position: relative;
   top: -5px;
 }
+
 .nav {
   width: 50%;
   margin: auto;
@@ -45,16 +51,17 @@ section::after {
   font-size: 10px;
   font-weight: 800;
   color: #faad68;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Fredoka One", cursive;
   letter-spacing: normal;
 }
+
 section h1 {
   color: #faad68;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Fredoka One", cursive;
   letter-spacing: normal;
   font-size: 50px;
   text-align: center;
+  margin: 30px;
 }
 .nav_font:hover {
   color: black;
@@ -63,7 +70,7 @@ section h1 {
 .nav img {
   width: 90px;
 }
-
+/* video  */
 video {
   height: 100%;
   width: 100%;
@@ -76,6 +83,7 @@ video {
 .video {
   width: 100%;
 }
+/* highlight */
 .wrapper {
   position: relative;
   box-sizing: border-box;
@@ -109,13 +117,14 @@ video {
   width: 46px;
   text-align: center;
   line-height: 46px;
-  opacity: 0.4;
+  opacity: 0.5;
   cursor: pointer;
   font-size: 1.2rem;
   display: block;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  color: #e70808;
 }
 .wrapper i:first-child {
   left: 10px;
@@ -135,6 +144,53 @@ video {
   filter: alpha(opacity = 80);
   transform: scale3d(1.1, 1.1, 1);
 }
+/* new release  */
+.wrapper .divide {
+  width: calc(33.3% - 20px);
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.wrapper .divide:nth-child(even) {
+  flex-wrap: wrap-reverse;
+}
+.divide::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.divide img:first-of-type {
+  clear: both;
+  width: 100%;
+  height: 80%;
+  margin: 0 0 10px 0;
+}
+.divide img {
+  width: calc(50% - 20px);
+  float: left;
+  height: 20%;
+  margin: 0 10px 10px 10px;
+}
+.carousel .dragging .divide {
+  pointer-events: none;
+}
+.carousel .divide {
+  width: calc(100% / 4);
+  object-fit: cover;
+  margin-left: 14px;
+}
+.carousel .divide:first-child {
+  margin-left: 0px;
+}
+.carousel .divide {
+  overflow: hidden;
+  max-width: 100%;
+  transition: opacity 1s ease 0s, transform 1s ease 0s;
+  opacity: 1;
+}
+
+/* responsive */
 @media only screen and (min-width: 900px) and (max-width: 1024px) {
   .header .wrapper .nav li {
     float: right;
