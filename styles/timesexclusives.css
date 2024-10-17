@@ -80,7 +80,7 @@
 
 .back_img {
   position: absolute;
-  width: calc(100% - 30px);
+  width: 100%;
   top: 0;
   right: 0;
   text-align: center;
@@ -101,6 +101,29 @@
   background-color: #fff;
   opacity: 0;
   transition: opacity 300ms ease-in-out, visibility 0ms 300ms;
+}
+.product .preview {
+  background-color: rgba(0, 0, 0, 0.54);
+  text-align: center;
+  position: absolute;
+  bottom: 4px;
+  width: 100%;
+  padding: 6px 0px;
+  box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.09);
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+  visibility: hidden;
+}
+.preview i::before {
+  color: #efefef;
+}
+.product:hover .preview {
+  opacity: 1;
+  transition: all ease 300ms;
+  visibility: visible;
+}
+.preview a:hover i::before {
+  color: #f2d9c3;
 }
 .product:hover button {
   visibility: visible;
@@ -129,7 +152,7 @@
     font-weight: lighter;
   }
   .wrapper .product .back_img {
-    width: calc(100% - 30px);
+    width: 100%;
     margin: 0;
   }
 }
