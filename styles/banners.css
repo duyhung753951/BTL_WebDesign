@@ -1,0 +1,50 @@
+.banner-img {
+  width: 100%;
+  transition: opacity 1s ease 0s, transform 1s ease 0s;
+  opacity: 1;
+}
+
+.banner-items {
+  float: left;
+}
+
+.banner-items a {
+  display: block;
+  overflow: hidden;
+}
+
+.banner-items:last-child a:first-of-type {
+  margin-bottom: 25px;
+}
+
+.multi-banner, .single-banner {
+  margin: 40px 0 40px 0;
+}
+
+.first-banner div.banner-items {
+  width: 25%;
+}
+
+.first-banner div.banner-items:first-of-type {
+  width: 50%;
+}
+
+.third-banner div.banner-items {
+  width: 33.33%;
+}
+
+.banner-img:hover {
+  opacity: 0.8;
+  filter: alpha(opacity = 80);
+  transform: scale3d(1.1, 1.1, 1);
+}
+
+@media only screen and (max-width: 600px) {
+  .banner-items {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+  .banner-items:last-child a:first-of-type {
+    margin-bottom: 10px;
+  }
+}

@@ -4,18 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hãng đĩa thế kỷ</title>
-    <link rel="icon" href="./assets/icon/logo-favicon.ico">
-    <link rel="stylesheet" href="./styles/general.css">
-    <link rel="stylesheet" href="./styles/section-slider.css">
-    <link rel="stylesheet" href="./styles/timesexclusives.css">
-    <link rel="stylesheet" href="./styles/multi-banner.css">
+    <link rel="icon" href="./assets/icon/logo-favicon.ico" />
+    <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/section-slider.css" />
+    <link rel="stylesheet" href="./styles/timesexclusives.css" />
+    <link rel="stylesheet" href="./styles/banners.css" />
+    <link rel="stylesheet" href="./styles/arrivals.css">
+    
     <!-- import font -->
-    <link href="https://fonts.cdnfonts.com/css/kelson-bold" rel="stylesheet" />
-    <!-- import social media logo -->
-    <script>
-      src="https://kit.fontawesome.com/d904896f95.js"
-      crossorigin="anonymous"
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body>
     <!-- Trang Store -->
@@ -23,25 +20,35 @@
     <div id="header"></div>
 
     <!-- MAIN -->
-     <!-- Image Slider -->
+    <!-- Image Slider -->
     <div class="main">
       <section>
         <div class="wrapper gallery-wrap">
           <div class="gallery">
             <div>
-              <span><img src="./assets/slides/slide_logo_1.jpg" class="slide-img"></span>
+              <span
+                ><img src="./assets/slides/slide_logo_1.jpg" class="slide-img" draggable="false"
+              /></span>
             </div>
             <div>
-              <span><img src="./assets/slides/slide_logo_2.jpg" class="slide-img"></span>
+              <span
+                ><img src="./assets/slides/slide_logo_2.jpg" class="slide-img" draggable="false"
+              /></span>
             </div>
             <div>
-              <span><img src="./assets/slides/slide_logo_3.jpg" class="slide-img"></span>
+              <span
+                ><img src="./assets/slides/slide_logo_3.jpg" class="slide-img" draggable="false"
+              /></span>
             </div>
             <div>
-              <span><img src="./assets/slides/slide_logo_4.jpg" class="slide-img"></span>
+              <span
+                ><img src="./assets/slides/slide_logo_4.jpg" class="slide-img" draggable="false"
+              /></span>
             </div>
             <div>
-              <span><img src="./assets/slides/slide_logo_5.jpg" class="slide-img"></span>
+              <span
+                ><img src="./assets/slides/slide_logo_5.jpg" class="slide-img" draggable="false"
+              /></span>
             </div>
           </div>
           <div class="slider-btn">
@@ -51,138 +58,1573 @@
         </div>
       </section>
       <!-- BANNER -->
-       <section>
+      <section>
         <div class="wrapper">
-          <div class="multi-banner margin-container">
-            <div class="banner-items col-6 padding-item">
-              <a href="#"><img class="banner-img " src="./assets/banners/banner_3_image_1.jpg" alt=""></a>
+          <div class="multi-banner margin-container  first-banner">
+            <div class="banner-items padding-item">
+              <a href="#"
+                ><img
+                  class="banner-img"
+                  src="./assets/banners/banner_3_image_1.jpg"
+                  alt=""
+              /></a>
             </div>
-            <div class="banner-items col-3 padding-item">
-              <a href="#"><img class="banner-img" src="./assets/banners/banner_3_image_2.jpg" alt=""></a>
+            <div class="banner-items padding-item">
+              <a href="#"
+                ><img
+                  class="banner-img"
+                  src="./assets/banners/banner_3_image_2.jpg"
+                  alt=""
+              /></a>
             </div>
-            <div class="banner-items col-3 padding-item">
-              <a href="#"><img class="banner-img" src="./assets/banners/banner_3_image_3.jpg" alt=""></a>
-              <a href="#"><img class="banner-img" src="./assets/banners/banner_3_image_3_2.jpg" alt=""></a>
+            <div class="banner-items padding-item">
+              <a href="#"
+                ><img
+                  class="banner-img"
+                  src="./assets/banners/banner_3_image_3.jpg"
+                  alt=""
+              /></a>
+              <a href="#"
+                ><img
+                  class="banner-img"
+                  src="./assets/banners/banner_3_image_3_2.jpg"
+                  alt=""
+              /></a>
             </div>
           </div>
         </div>
-       </section>
+      </section>
 
       <!-- TIMES EXCLUSIVES -->
       <section>
         <div class="time">
           <div class="wrapper">
-            <h2 class="title"> TIMES EXCLUSIVES / HÃNG ĐĨA THỜI ĐẠI PHÁT HÀNH</h2>
+            <h2 class="title"><i class="fa-solid fa-list"></i>
+              Century Records releases / hãng đĩa thế kỷ phát hành
+            </h2>
             <div class="wrapper-product">
-              <div class="product"> 
-                <img src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/ha-tran-tran-tien-08-repacked-edition-dia-cd_1_ed9294e80a0744a6aedd151f432f86fb_grande.jpg" alt="product_item" class="img_product"> 
-                <h4 class="product_name">Hà Trần Productions - TrẦn TiẾn (Repacked Edition) - Đĩa CD</h4>
+              <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/ha-tran-tran-tien-08-repacked-edition-dia-cd_1_ed9294e80a0744a6aedd151f432f86fb_grande.jpg"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/TIMES EXCLUSIVES/back-img/back_img_tran_tien.jpg" alt="trantien" class="back_img">
+                  <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                <h4 class="product_name">
+                  Hà Trần Productions - TrẦn TiẾn (Repacked Edition) - Đĩa CD
+                </h4>
                 <span class="price">350,000₫</span>
-                <form action="" class="add_to_cart">
-                  <button class="add_to_cart">THÊM VÀO GIỎ<input type="submit"></button>
+                <form method="post" action="/cart/add" class="add-to-cart">
+                  <input type="hidden" name="id" value="1129006004" />
+                  <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                  <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
                 </form>
               </div>
-              <div class="product"> 
-                <img src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/amee-mongmee-mini-album_bed1ee197c8d4b49b54341920dd68e7e_grande.jpg" alt="product_item" class="img_product"> 
-                <h4 class="product_name">AMEE - MỘNGMEE (The Mini Album) - Đĩa CD</h4>
+              <div class="product">
+                <div class="img-container" style="position: relative;">
+                <img
+                  src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/amee-mongmee-mini-album_bed1ee197c8d4b49b54341920dd68e7e_grande.jpg"
+                  alt="product_item"
+                  class="img_product"
+                />
+                <img src="./assets/back-images/TIMES EXCLUSIVES/back-img/amee-mongmee-mini-album_bed1ee197c8d4b49b54341920dd68e7e_grande.jpg" alt="AMEE" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                <h4 class="product_name">
+                  AMEE - MỘNGMEE (The Mini Album) - Đĩa CD
+                </h4>
                 <span class="price">350,000₫</span>
-                <form action="" class="add_to_cart">
-                  <button class="add_to_cart">THÊM VÀO GIỎ<input type="submit"></button>
+                <form method="post" action="/cart/add" class="add-to-cart">
+                  <input type="hidden" name="id" value="1129006004" />
+                  <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                  <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
                 </form>
               </div>
-              <div class="product"> 
-                <img src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/phung_khanh_linh_uoc_anh_tan_nat_con_tim-cd_69f1a4a525b7456dae7ca39aeaf8fea6_grande.jpg" alt="product_item" class="img_product"> 
-                <h4 class="product_name">Phùng Khánh Linh - ƯỚC ANH TAN NÁT CON TIM (CD Single) - Đĩa CD</h4>
+              <div class="product">
+                <div class="img-container" style="position: relative;">
+                <img
+                  src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/phung_khanh_linh_uoc_anh_tan_nat_con_tim-cd_69f1a4a525b7456dae7ca39aeaf8fea6_grande.jpg"
+                  alt="product_item"
+                  class="img_product"
+                />
+                <img src="./assets/back-images/TIMES EXCLUSIVES/back-img/phung_khanh_linh-uoc_anh_tan_nat_con_tim-cd_single_0072767b7d514dc2a7685bcc20d2f5a0_grande.jpg" alt="phung_khanh_linh" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                <h4 class="product_name">
+                  Phùng Khánh Linh - ƯỚC ANH TAN NÁT CON TIM (CD Single) - Đĩa
+                  CD
+                </h4>
                 <span class="price">250,000₫</span>
-                <form action="" class="add_to_cart">
-                  <button class="add_to_cart">THÊM VÀO GIỎ<input type="submit"></button>
+                <form method="post" action="/cart/add" class="add-to-cart">
+                  <input type="hidden" name="id" value="1129006004" />
+                  <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                  <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
                 </form>
               </div>
-              <div class="product"> 
-                <img src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/quang-dung_yeu-em-giua-doi-quen-lang_cd-cover_1909b4abb15148e9a9148ecc3e170371_grande.jpg" alt="product_item" class="img_product"> 
-                <h4 class="product_name">Quang Dũng - Yêu Em Giữa Đời Quên Lãng (Limited Boxset) - Đĩa CD</h4>
+              <div class="product">
+                <div class="img-container" style="position: relative;">
+                <img
+                  src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/quang-dung_yeu-em-giua-doi-quen-lang_cd-cover_1909b4abb15148e9a9148ecc3e170371_grande.jpg"
+                  alt="product_item"
+                  class="img_product"
+                />
+                <img src="./assets/back-images/TIMES EXCLUSIVES/back-img/quang-dung_yeu-em-giua-doi-quen-lang_cd-mockup-02_507955b5125e419daa925b55615d61f6_grande.jpg" alt="quang_dung" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                <h4 class="product_name">
+                  Quang Dũng - Yêu Em Giữa Đời Quên Lãng (Limited Boxset) - Đĩa
+                  CD
+                </h4>
                 <span class="price">500,000₫</span>
-                <form action="" class="add_to_cart">
-                  <button class="add_to_cart">THÊM VÀO GIỎ<input type="submit"></button>
+                <form method="post" action="/cart/add" class="add-to-cart">
+                  <input type="hidden" name="id" value="1129006004" />
+                  <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                  <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
                 </form>
               </div>
-              <div class="product"> 
-                <img src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/img_8288_bf57eebb433142ac87e53f31d04d73c0_grande.jpg" alt="product_item" class="img_product">
-                <h4 class="product_name">Thương Võ - Không Phải Đồ Ăn (CD Single) - Đĩa CD</h4>
+              <div class="product">
+                <div class="img-container" style="position: relative;">
+                <img
+                  src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/img_8288_bf57eebb433142ac87e53f31d04d73c0_grande.jpg"
+                  alt="product_item"
+                  class="img_product"
+                />
+                <img src="./assets/back-images/TIMES EXCLUSIVES/back-img/thuong_vo.jpg" alt="thuong_vo" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                <h4 class="product_name">
+                  Thương Võ - Không Phải Đồ Ăn (CD Single) - Đĩa CD
+                </h4>
                 <span class="price">200,000₫</span>
-                <form action="" class="add_to_cart">
-                  <button class="add_to_cart">THÊM VÀO GIỎ<input type="submit"></button>
+                <form method="post" action="/cart/add" class="add-to-cart">
+                  <input type="hidden" name="id" value="1129006004" />
+                  <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                  <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
                 </form>
               </div>
             </div>
           </div>
-          
+
           <div class="wrapper">
             <div class="wrapper-product">
-              <div class="product"> 
-                <img src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/img_8775_027ea05209a54b16b3a32e14d8782fac_grande.jpg" alt="product_item" class="img_product"> 
-                <h4 class="product_name">CHENG - CHẬP CHENG (DEBUT ALBUM) - Đĩa CD</h4>
+              <div class="product">
+                <div class="img-container" style="position: relative;">
+                <img
+                  src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/img_8775_027ea05209a54b16b3a32e14d8782fac_grande.jpg"
+                  alt="product_item"
+                  class="img_product"
+                />
+                <img src="./assets/back-images/TIMES EXCLUSIVES/back-img/chap_cheng.jpg" alt="chap_cheng" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                <h4 class="product_name">
+                  CHENG - CHẬP CHENG (DEBUT ALBUM) - Đĩa CD
+                </h4>
                 <span class="price">250,000₫</span>
-                <form action="" class="add_to_cart">
-                  <button class="add_to_cart">THÊM VÀO GIỎ<input type="submit"></button>
+                <form method="post" action="/cart/add" class="add-to-cart">
+                  <input type="hidden" name="id" value="1129006004" />
+                  <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                  <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
                 </form>
               </div>
-              <div class="product"> 
-                <img src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/ha_tran-doi_thoai_06-communication-06_a_da3064c0d0c748a2802e38440e5caec3_grande.jpg" alt="product_item" class="img_product"> 
-                <h4 class="product_name">Hà Trần - Đối Thoại '06 (Repacked Edition) - Đĩa CD</h4>
+              <div class="product">
+                <div class="img-container" style="position: relative;">
+                <img
+                  src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/toc_do.jpg"
+                  alt="product_item"
+                  class="img_product"
+                />
+                <img src="./assets/back-images/TIMES EXCLUSIVES/back-img/doi_thoai_chuan.jpg" alt="doi_thoai" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                <h4 class="product_name">
+                  Hà Trần - Đối Thoại '06 (Repacked Edition) - Đĩa CD
+                </h4>
                 <span class="price">350,000₫</span>
-                <form action="" class="add_to_cart">
-                  <button class="add_to_cart">THÊM VÀO GIỎ<input type="submit"></button>
+                <form method="post" action="/cart/add" class="add-to-cart">
+                  <input type="hidden" name="id" value="1129006004" />
+                  <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                  <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
                 </form>
               </div>
-              <div class="product"> 
-                <img src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/img_8774_5c9669209bd6476c9a8cdc996d7ee5c7_grande.jpg" alt="product_item" class="img_product"> 
-                <h4 class="product_name">HAN SARA - I SARA YOU (EP) - Đĩa CD</h4>
+              <div class="product">
+                <div class="img-container" style="position: relative;">
+                <img
+                  src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/img_8774_5c9669209bd6476c9a8cdc996d7ee5c7_grande.jpg"
+                  alt="product_item"
+                  class="img_product"
+                />
+                <img src="./assets/back-images/TIMES EXCLUSIVES/back-img/heart.jpg" alt="t_sara_you" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                <h4 class="product_name">
+                  HAN SARA - I SARA YOU (EP) - Đĩa CD
+                </h4>
                 <span class="price">250,000₫</span>
-                <form action="" class="add_to_cart">
-                  <button class="add_to_cart">THÊM VÀO GIỎ<input type="submit"></button>
+                <form method="post" action="/cart/add" class="add-to-cart">
+                  <input type="hidden" name="id" value="1129006004" />
+                  <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                  <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
                 </form>
               </div>
-              <div class="product"> 
-                <img src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/lowG.png" alt="product_item" class="img_product"> 
+              <div class="product">
+                <div class="img-container" style="position: relative;">
+                <img
+                  src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/lowG.png"
+                  alt="product_item"
+                  class="img_product"
+                />
+                <img src="./assets/back-images/TIMES EXCLUSIVES/back-img/back_img_lowg.png" alt="FLVR" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
                 <h4 class="product_name">tlinh x Low G - FLVR (EP) - Đĩa CD</h4>
                 <span class="price">380,000₫</span>
-                <form action="" class="add_to_cart">
-                  <button class="add_to_cart">THÊM VÀO GIỎ<input type="submit"></button>
+                <form method="post" action="/cart/add" class="add-to-cart">
+                  <input type="hidden" name="id" value="1129006004" />
+                  <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                  <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
                 </form>
               </div>
-              <div class="product"> 
-                <img src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/lan_nha.png" alt="product_item" class="img_product">
-                <h4 class="product_name">Lân Nhã - Những Lời Thương Gửi Muộn (2-Track CD Single) - Đĩa CD</h4>
+              <div class="product">
+                <div class="img-container" style="position: relative;">
+                <img
+                  src="./assets/back-images/TIMES EXCLUSIVES/product-feature-img/lan_nha.png"
+                  alt="product_item"
+                  class="img_product"
+                />
+                <img src="./assets/back-images/TIMES EXCLUSIVES/back-img/back_img_lan_nha.png" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                <h4 class="product_name">
+                  Lân Nhã - Những Lời Thương Gửi Muộn (2-Track CD Single) - Đĩa
+                  CD
+                </h4>
                 <span class="price">250,000₫</span>
-                <form action="" class="add_to_cart">
-                  <button class="add_to_cart">THÊM VÀO GIỎ<input type="submit"></button>
+                <form method="post" action="/cart/add" class="add-to-cart">
+                  <input type="hidden" name="id" value="1129006004" />
+                  <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                  <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                </form>
                 </form>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- SECOND BANNER -->
+      <section>
+        <div class="wrapper">
+          <div class="single-banner margin-container">
+            <div class="banner-items padding-item">
+              <a href="#"
+                ><img
+                  class="banner-img"
+                  src="./assets/banners/banner_1_image.jpg"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- NEW ARRIVALS -->
+      <section>
+        <div class="wrapper gallery-wrap">
+          <h2 class="title"><i class="fa-solid fa-list"></i>
+            NEW ARRIVALS / SẢN PHẨM MỚI
+          </h2>
+          <div class="product-2">
+            <div class="arrivals">
+                <div class="slider-product-2  margin-container">
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/NEW ARRIVALS/product-feature-img/-department-taylor-swift-album-020424-ced140530abf477d9c47af75c12fcbb3_733432c0b9eb48399e5fdc1f301def98_grande.jpg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/NEW ARRIVALS/back-img/taylor-swift-the-tortured-poets-department-dia-cd_797195893b37498cbe5ff4786954b92a_grande.png" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      TAYLOR SWIFT - THE TORTURED POETS DEPARTMENT (THE MANUSCRIPT) - ĐĨA CD
+                    </h4>
+                    <span class="price">450,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/NEW ARRIVALS/product-feature-img/billie-eilish-hit-me-hard-and-soft-dia-cd_acf267f66d9943ba86e3a89ada79f3c1_grande.jpg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/NEW ARRIVALS/back-img/billie-eilish-hit-me-hard-and-soft-dia-cd_acf267f66d9943ba86e3a89ada79f3c1_grande.jpg" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      BILLIE EILISH - HIT ME HARD AND SOFT - ĐĨA CD
+                    </h4>
+                    <span class="price">430,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/NEW ARRIVALS/product-feature-img/charli-xcx-brat-dia-cd_029de72df19f4174a723c7166d38797e_grande.jpeg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/NEW ARRIVALS/back-img/charli-xcx-brat-dia-cd_029de72df19f4174a723c7166d38797e_grande.jpeg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      CHARLI XCX - BRAT - ĐĨA CD
+                    </h4>
+                    <span class="price">420,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/NEW ARRIVALS/product-feature-img/3-beyonce-cowboy-carter-backcover-variant-1_42f76fae88ad49b5abb1af42facb0577_grande.jpg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/NEW ARRIVALS/back-img/beyonce-cowboy-carter-dia-cd_e5f0403ff96744ada9080466d63bb876_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      BEYONCE - COWBOY CARTER - ĐĨA CD
+                    </h4>
+                    <span class="price">420,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/NEW ARRIVALS/product-feature-img/ariana-grande-eternal-sunshine-dia-cd_ef8a89810f5441c1a02bf0072960e4a9_grande.jpg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/NEW ARRIVALS/back-img/ariana-grande-eternal-sunshine-dia-cd_ef8a89810f5441c1a02bf0072960e4a9_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      ARIANA GRANDE - ETERNAL SUNSHINE - ĐĨA CD
+                    </h4>
+                    <span class="price">430,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/NEW ARRIVALS/product-feature-img/dua-lipa-radical-optimism-lenticular-cover-dia-cd_f25b1c84b5804980ac59284f880784ce_grande.png"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/NEW ARRIVALS/back-img/dua-lipa-radical-optimism-lenticular-cover-dia-cd_f25b1c84b5804980ac59284f880784ce_grande.png" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      DUA LIPA - RADICAL OPTIMISM (LENTICULAR COVER) - ĐĨA CD
+                    </h4>
+                    <span class="price">390,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/NEW ARRIVALS/product-feature-img/wallows-model-dia-cd_12aaaeec117343a4b6e0f366131f96a8_grande.jpg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/NEW ARRIVALS/back-img/wallows-model-dia-cd_12aaaeec117343a4b6e0f366131f96a8_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      WALLOWS - MODEL - ĐĨA CD
+                    </h4>
+                    <span class="price">430,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/NEW ARRIVALS/product-feature-img/twenty-one-pilots-clancy-dia-cd_bfeb8e3ea7d64771a57a9bb288e9affc_grande.jpeg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/NEW ARRIVALS/back-img/twenty-one-pilots-clancy-dia-cd_bfeb8e3ea7d64771a57a9bb288e9affc_grande.jpeg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      TWENTY ONE PILOTS - CLANCY - ĐĨA CD
+                    </h4>
+                    <span class="price">430,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/NEW ARRIVALS/product-feature-img/cage-the-elephant-neon-pill-dia-cd_ddd10b5120b541fb880893988a6bca07_grande.jpeg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/NEW ARRIVALS/back-img/cage-the-elephant-neon-pill-dia-cd_ddd10b5120b541fb880893988a6bca07_grande.jpeg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      CAGE THE ELEPHANT - NEON PILL - ĐĨA CD
+                    </h4>
+                    <span class="price">420,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/NEW ARRIVALS/product-feature-img/justin-timberlake-everything-i-thought-it-was-dia-cd_c414773c266e4207b92bc497621d64e5_grande.jpeg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/NEW ARRIVALS/back-img/justin-timberlake-everything-i-thought-it-was-dia-cd_c414773c266e4207b92bc497621d64e5_grande.jpeg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      JUSTIN TIMBERLAKE - EVERYTHING I THOUGHT IT WAS - ĐĨA CD
+                    </h4>
+                    <span class="price">450,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                </div>
+            </div>
+            <div class="slider-btn-2">
+              <div class="left"><i class="fa-solid fa-angle-left"></i></div>
+              <div class="right"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- STAFF PICKS -->
+      <section>
+        <div class="wrapper gallery-wrap">
+          <h2 class="title"><i class="fa-solid fa-list"></i>
+            STAFF PICKS / ĐĨA HÁT HÃNG CHỌN
+          </h2>
+          <div class="product-2">
+            <div class="arrivals">
+                <div class="slider-product-2  margin-container">
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/STAFF PICKS/product-feature-img/mockup_2_0f977a40b65b4ee78705042f26874c2a_grande.jpg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/STAFF PICKS/product-feature-img/mockup_2_0f977a40b65b4ee78705042f26874c2a_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      HÀ TRẦN - NHỮNG CON SÔNG NGÓN TAY (TRANSLUCENT LIGHT BLUE VINYL LP) - ĐĨA THAN
+                    </h4>
+                    <span class="price">1,200,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/STAFF PICKS/product-feature-img/mu_vinyl_bc4db2e3aded4e48b5beaa4a83ebb1d7_grande.jpg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/STAFF PICKS/back-img/mu_vinyl_bc4db2e3aded4e48b5beaa4a83ebb1d7_grande.jpg" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      HỨA KIM TUYỀN - COLOURS (TRANSLUCENT LIGHT BLUE VINYL LP) - ĐĨA THAN
+                    </h4>
+                    <span class="price">1,050,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/STAFF PICKS/product-feature-img/hung-khanh-linh-citopia-the-2nd-studio-album-official-cover-ver-dia-cd_81f091c20eed4eec948b678d8ed267b9_grande.jpg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/STAFF PICKS/back-img/hung-khanh-linh-citopia-the-2nd-studio-album-official-cover-ver-dia-cd_81f091c20eed4eec948b678d8ed267b9_grande.jpg" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      PHÙNG KHÁNH LINH - CITOPIA - THE 2ND STUDIO ALBUM (VINYL LP) - ĐĨA THAN
+                    </h4>
+                    <span class="price">1,050,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/STAFF PICKS/product-feature-img/hoang-thuy-linh-link-a-side-b-side-colored-gatefold-vinyl-lp-dia-than_ea3addf35b364b3aabde812c2a4c17e7_grande.jpg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/STAFF PICKS/back-img/hoang-thuy-linh-link-a-side-b-side-colored-gatefold-vinyl-lp-dia-than_ea3addf35b364b3aabde812c2a4c17e7_grande.jpg" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      HOÀNG THÙY LINH - LINK (A SIDE B SIDE COLORED GATEFOLD VINYL LP) - ĐĨA THAN
+                    </h4>
+                    <span class="price">1,200,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/STAFF PICKS/product-feature-img/suboi-none-limited-sky-blue-vinyl-lp-dia-than_6c22f51b94584c6eaa74e8ab89a0f505_grande.jpeg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/STAFF PICKS/back-img/suboi-none-limited-sky-blue-vinyl-lp-dia-than_6c22f51b94584c6eaa74e8ab89a0f505_grande.jpeg" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      SUBOI - NO NÊ (LIMITED SKY BLUE VINYL LP) - ĐĨA THAN
+                    </h4>
+                    <span class="price">1,200,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/STAFF PICKS/product-feature-img/le-cat-trong-ly-tuoi-25-light-blue-vinyl-lp-dia-than_1d4b7c9aa71245edad7e88e4c4ad38e6_grande.jpeg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/STAFF PICKS/back-img/le-cat-trong-ly-tuoi-25-light-blue-vinyl-lp-dia-than_1d4b7c9aa71245edad7e88e4c4ad38e6_grande.jpeg" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      LÊ CÁT TRỌNG LÝ - TUỔI 25 (LIMITED SKY BLUE VINYL LP) - ĐĨA THAN
+                    </h4>
+                    <span class="price">1,050,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/STAFF PICKS/product-feature-img/thanh-lam-noi-gap-go-tinh-yeu-baby-pink-vinyl-lp-dia-than_378757cd87b74a3e80a835422c8f524c_grande.jpg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/STAFF PICKS/back-img/thanh-lam-noi-gap-go-tinh-yeu-baby-pink-vinyl-lp-dia-than_378757cd87b74a3e80a835422c8f524c_grande.jpg" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      THANH LAM - NOI GẶP GỠ TÌNH YÊU (BABY PINK VINYL LP) - ĐĨA THAN
+                    </h4>
+                    <span class="price">1,050,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                </div>
+            </div>
+            <div class="slider-btn-2">
+              <div class="left"><i class="fa-solid fa-angle-left"></i></div>
+              <div class="right"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRENDING / ĐANG THỊNH HÀNH -->
+
+      <section>
+        <div class="wrapper gallery-wrap">
+          <h2 class="title"><i class="fa-solid fa-list"></i>
+            TRENDING / ĐANG THỊNH HÀNH
+          </h2>
+          <div class="product-2">
+            <div class="arrivals">
+                <div class="slider-product-2  margin-container">
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/TRENDING/product-feature-img/ha-tran_nhung-con-song-ngon-tay_cassette_5a6261db66ca484393fb3ce50fbf8f99_grande.jpg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/TRENDING/back-img/ha-tran_nhung-con-song-ngon-tay_cassette_5a6261db66ca484393fb3ce50fbf8f99_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      HÀ TRẦN - NHỮNG CON SÔNG NGÓN TAY (SEA GREEN TAPE) - BĂNG CASSETTE
+                    </h4>
+                    <span class="price">350,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/TRENDING/product-feature-img/437080201_1117809949335448_8300791482668507769_n_9d23ab7310334b2495546af46ae0c724_grande.jpg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/TRENDING/back-img/434763475_782072013552186_4177881475945857420_n_77a71267862347059c9735b420f0c2c0_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      HỨA KIM TUYỀN - COLOURS (FROSTED ICE TAPE) - BĂNG CASSETTE
+                    </h4>
+                    <span class="price">350,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/TRENDING/product-feature-img/bui-lan-huong-nu-than-mat-trang-monangel-bang-cassette_1c4a10ca141d41d9b1f5c592f95f2fa5_grande.jpg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/TRENDING/back-img/bui_lan_huong_-_monagel_3154bf77106f4b9c8f21414f7160a3c1_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      BÙI LAN HƯƠNG - NỮ THẦN MẶT TRĂNG (MÔNANGLE) - BĂNG CASSETTE
+                    </h4>
+                    <span class="price">350,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/TRENDING/product-feature-img/van-mai-huong-hua-kim-tuyen-minh-tinh-bang-cassette_f458c993c97844f49d5091676aaa585f_grande.jpg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/TRENDING/back-img/van_mai_huong__hua_kim_tuyen_-_minh_tinh_ddac0f64a7ab47c2878a90c58d8cf18b_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      VĂN MAI HƯƠNG, HỨA KIM TUYỀN - MINH TINH - BĂNG CASSETTE
+                    </h4>
+                    <span class="price">350,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/TRENDING/product-feature-img/715b362f-89c8-4614-a65c-090d21ed6ded_ff4d7fb72bca4ffeb495008fd56358bc_grande.jpg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/TRENDING/back-img/lan-nha-nhien-bang-cassette_bf0b8f6315564d8f80e84ca6d50f6d03_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      LÂN NHÃ - NHIÊN - BĂNG CASSETTE
+                    </h4>
+                    <span class="price">350,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/TRENDING/product-feature-img/hoang-thuy-linh-link-bang-cassette_05b8854504cd42e48572b61c4a529365_grande.jpg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/TRENDING/back-img/hoang-thuy-linh-link-bang-cassette_05b8854504cd42e48572b61c4a529365_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      HOÀNG THÙY LINH - LINK (SPECIAL GOLD VERSION) - BĂNG CASSETTE
+                    </h4>
+                    <span class="price">450,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/TRENDING/product-feature-img/hat-limited-deluxe-edition-nhung-bai-hat-cua-ho-tien-dat-bang-cassette_cbac95a98c3a4c34abe1abe999530b7c_grande.jpg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/TRENDING/back-img/hat-limited-deluxe-edition-nhung-bai-hat-cua-ho-tien-dat-bang-cassette_cbac95a98c3a4c34abe1abe999530b7c_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      NGUYÊN HÀ - ĐIỀU VÔ LÝ THỨ NHẤT [DELUXE EDITION] (NHỮNG BÀI HÁT CỦA HỒ TIẾN ĐẠT) - BĂNG CASSETTE
+                    </h4>
+                    <span class="price">300,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/TRENDING/product-feature-img/toc-tien-cong-bang-cassette_515638c62d434513b33e6f524ef38ad6_grande.jpeg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/TRENDING/back-img/toc-tien-cong-bang-cassette_515638c62d434513b33e6f524ef38ad6_grande.jpeg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      Tóc Tiên - CONG - Băng Cassette
+                    </h4>
+                    <span class="price">350,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                  <!-- start product -->
+                  <div class="product">
+                <div class="img-container" style="position: relative;">
+                    <img
+                      src="./assets/back-images/TRENDING/product-feature-img/buc-tuong-con-duong-khong-ten-cassette-tape-bang-cassette_abc59030f7894bd8a634900833556dfa_grande.jpg"
+                      alt="product_item"
+                      class="img_product"
+                    />
+                    <img src="./assets/back-images/TRENDING/back-img/buc-tuong-con-duong-khong-ten-cassette-tape-bang-cassette_abc59030f7894bd8a634900833556dfa_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                    <h4 class="product_name">
+                      Bức Tường - Con Đường Không Tên (Cassette Tape) - Băng Cassette
+                    </h4>
+                    <span class="price">350,000₫</span>
+                    <form method="post" action="/cart/add" class="add-to-cart">
+                      <input type="hidden" name="id" value="1129006004" />
+                      <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                      <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                    </form>
+                    </form>
+                  </div>
+                  <!-- end product -->
+                </div>
+            </div>
+            <div class="slider-btn-2">
+              <div class="left"><i class="fa-solid fa-angle-left"></i></div>
+              <div class="right"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- THIRD BANNER -->
+      <section>
+        <div class="wrapper">
+          <div class="multi-banner margin-container third-banner">
+            <div class="banner-items col-4 padding-item">
+              <a href="#"
+                ><img
+                  class="banner-img"
+                  src="./assets/banners/banner_3_image_1v2.jpg"
+                  alt=""
+              /></a>
+            </div>
+            <div class="banner-items col-4 padding-item">
+              <a href="#"
+                ><img
+                  class="banner-img"
+                  src="./assets/banners/banner_3_image_2v2.jpg"
+                  alt=""
+              /></a>
+            </div>
+            <div class="banner-items col-4 padding-item">
+              <a href="#"
+                ><img
+                  class="banner-img"
+                  src="./assets/banners/banner_3_image_3v2.jpg"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
+
+    <!-- V-INDIE CITY -->
+    <section>
+      <div class="wrapper gallery-wrap">
+        <h2 class="title"><i class="fa-solid fa-list"></i>
+          V-INDIE CITY
+        </h2>
+        <div class="product-2">
+          <div class="arrivals">
+              <div class="slider-product-2  margin-container">
+                <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/V-INDIE CITY/product-feature-img/phung-khanh-linh-citopia-the-2nd-studio-album-jewel-case-dia-cd_6ff4a204bf364e30bf683c1200d249bc_grande.jpeg"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/V-INDIE CITY/back-img/phung-khanh-linh-citopia-the-2nd-studio-album-digipak-ver-dia-cd_e600d9f9d7db4841a0495502c16c536a_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    PHÙNG KHÁNH LINH - CITOPIA - THE 2ND STUDIO ALBUM (DIGIPAK VER.) - ĐĨA CD
+                  </h4>
+                  <span class="price">350,000₫</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+                <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/V-INDIE CITY/product-feature-img/the_luka_project_-_the_luka_project_-_dia_cd_2357e94031ae4dd1b64d89fb9a271727_grande.jpg"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/V-INDIE CITY/back-img/the_luka_project_-_the_luka_project_-_dia_cd_2357e94031ae4dd1b64d89fb9a271727_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    The Luka Project - The Luka Project - Đĩa CD
+                  </h4>
+                  <span class="price">350,000₫</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+                <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/V-INDIE CITY/product-feature-img/vo-viet-phuong-hat-voi-anh-dia-cd_7abc99bca6464002ac85303343b41087_grande.png"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/V-INDIE CITY/back-img/vo-viet-phuong-hat-voi-anh-dia-cd_7abc99bca6464002ac85303343b41087_grande.png" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    Võ Việt Phương - Hát Với Anh - Đĩa CD
+                  </h4>
+                  <span class="price">200,000₫</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+                <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/V-INDIE CITY/product-feature-img/meow-lac-rung-be-tong-dia-cd_f9978e93304d4dd982d12711ff6d6967_grande.png"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/V-INDIE CITY/back-img/meow-lac-rung-be-tong-dia-cd_f9978e93304d4dd982d12711ff6d6967_grande.png" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    Mèow Lạc - Rừng Bê Tông - Đĩa CD
+                  </h4>
+                  <span class="price">250,000₫</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+                <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/V-INDIE CITY/product-feature-img/20231119_meow-lac_suga-rush_cover_8cf02949ac6d47a7b05d01097c947d58_grande.jpg"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/V-INDIE CITY/back-img/20231119_meow-lac_suga-rush_cover_8cf02949ac6d47a7b05d01097c947d58_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    Mèow Lạc - Sugar Rush (The 2nd Album) - Đĩa CD
+                  </h4>
+                  <span class="price">350,000₫</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+                <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/V-INDIE CITY/product-feature-img/da-so-toi-em-dia-cd_9cd1e1532eae41208a864dc4c940b174_grande.jpeg"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/V-INDIE CITY/back-img/da-so-toi-em-dia-cd_9cd1e1532eae41208a864dc4c940b174_grande.jpeg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    Đá Số Tới - Ẻm - Đĩa CD
+                  </h4>
+                  <span class="price">300,000₫</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+                <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/V-INDIE CITY/product-feature-img/img_1908_bc89d66487fd461e9a94268626857ad9_grande.jpg"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/V-INDIE CITY/back-img/img_1908_bc89d66487fd461e9a94268626857ad9_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    JAIGON ORCHESTRA - KÍP ĐÀO HOA - Đĩa CD
+                  </h4>
+                  <span class="price">300,000₫</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+                <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/V-INDIE CITY/product-feature-img/be405047-5bc8-499d-b8d3-18bc64d91b42_572ee879567a4bd6b8c2f10900de69df_grande.jpg"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/V-INDIE CITY/back-img/be405047-5bc8-499d-b8d3-18bc64d91b42_572ee879567a4bd6b8c2f10900de69df_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    Đặng Hoàng Hải - Chưa Ra Đời - Đĩa CD
+                  </h4>
+                  <span class="price">250,000₫</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+                <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/V-INDIE CITY/product-feature-img/cd-7uppercuts-chai-mai-ep_79e06c0bf57d433ca5a6c1c65067ea4e_grande.jpg"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/V-INDIE CITY/back-img/cd-7uppercuts-chai-mai-ep_79e06c0bf57d433ca5a6c1c65067ea4e_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    7UPPERCUTS - CHÁI MÁI - Đĩa CD
+                  </h4>
+                  <span class="price">350,000₫</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+                 <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/V-INDIE CITY/product-feature-img/dzung-dzanca-cd_front_02d0c16c51ca41ca944f0205a86b50b0_grande.jpg"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/V-INDIE CITY/back-img/dzung-dzanca-cd_front_02d0c16c51ca41ca944f0205a86b50b0_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    Dzung - Dzanca - Đĩa CD
+                  </h4>
+                  <span class="price">400,000₫</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+                <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/V-INDIE CITY/product-feature-img/mars-anh-tu_the-ballad_bf34cc1a566b46ae9fccf7306c666857_grande.png"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/V-INDIE CITY/back-img/mars-anh-tu_the-ballad_bf34cc1a566b46ae9fccf7306c666857_grande.png" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    Mars Anh Tú - The Ballad (Boxset Ver.) - Đĩa CD
+                  </h4>
+                  <span class="price">450,000₫</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+                <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/V-INDIE CITY/product-feature-img/img_1602_947d8be8465c4d72a799ff4dad22c740_grande.jpg"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/V-INDIE CITY/back-img/img_1602_947d8be8465c4d72a799ff4dad22c740_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    Lê Khoa - Humanity (Times Exclusive) - Đĩa CD
+                  </h4>
+                  <span class="price">250,000₫</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+                <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/V-INDIE CITY/product-feature-img/m-yeu-lan-dau-single-dia-don-cd_d1b10388e7554b7ab4e1b3529bda01c8_large_d9eba345686f4981ac1b6e33b5563a5a_grande.jpg"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/V-INDIE CITY/back-img/m-yeu-lan-dau-single-dia-don-cd_d1b10388e7554b7ab4e1b3529bda01c8_large_d9eba345686f4981ac1b6e33b5563a5a_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    J.ADE - Sorry Em Yêu Lần Đầu (Single) - Đĩa Đơn CD
+                  </h4>
+                  <span class="price">100,000₫</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+                <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/V-INDIE CITY/product-feature-img/tung_sax-1989_saxophone_f34ab9dff52f4fb7b00a1993bf21b579_grande.jpg"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/V-INDIE CITY/back-img/tung_sax-1989_saxophone_f34ab9dff52f4fb7b00a1993bf21b579_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    Tùng S.A.X - 1989 Saxophone (Nhạc Không Lời) - Đĩa CD
+                  </h4>
+                  <span class="price">360,000₫</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+              </div>
+          </div>
+          <div class="slider-btn-2">
+            <div class="left"><i class="fa-solid fa-angle-left"></i></div>
+            <div class="right"><i class="fa-solid fa-angle-right"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SALE -->
+    <section>
+      <div class="wrapper gallery-wrap">
+        <h2 class="title"><i class="fa-solid fa-list"></i>
+          SALE
+        </h2>
+        <div class="product-2">
+          <div class="arrivals">
+              <div class="slider-product-2  margin-container">
+                <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/SALE/product-feature-img/david-guetta-listen-dia-cd_grande.jpg"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/SALE/back-img/david-guetta-listen-dia-cd_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    David Guetta - Listen - Đĩa CD
+                  </h4>
+                  <del class="sale-price">400,000đ</del> <span class="price">320,000₫</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+                <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/SALE/product-feature-img/christina_aguilera_-_lotus__deluxe__-_dia_cd_grande.jpg"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/SALE/back-img/christina_aguilera_-_lotus__deluxe__-_dia_cd_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    Christina Aguilera - Lotus (Standard) - Đĩa CD
+                  </h4>
+                  <del class="sale-price">330,000đ</del> <span class="price">264,000₫</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+                <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/SALE/product-feature-img/bon_jovi_-_this_house_is_not_for_sale_-_dia_cd_grande.jpg"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/SALE/back-img/bon_jovi_-_this_house_is_not_for_sale_-_dia_cd_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    Bon Jovi - This House Is Not For Sale - Đĩa CD
+                  </h4>
+                  <span class="price">BÁN HẾT</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+                <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/SALE/product-feature-img/justin_timberlake_-_the_20_20_experience_part_2__deluxe_ver.__-_dia_cd_grande.jpg"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/SALE/back-img/justin_timberlake_-_the_20_20_experience_part_2__deluxe_ver.__-_dia_cd_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    Justin Timberlake - The 20/20 Experience Part 2 (Deluxe Ver.) - Đĩa CD
+                  </h4>
+                  <del class="sale-price">250,000đ</del> <span class="price">200,000₫</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+                <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/SALE/product-feature-img/janet_jackson_-_unbreakable__limited_cover__-_dia_cd_grande.jpg"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/SALE/back-img/janet_jackson_-_unbreakable__limited_cover__-_dia_cd_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    Janet Jackson - Unbreakable (Limited Cover) - Đĩa CD
+                  </h4>
+                  <del class="sale-price">350,000đ</del> <span class="price">280,000₫</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+                <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/SALE/product-feature-img/demi-lovato-tell-me-you-love-me-standard-dia-cd_d425a658ef4549e58038613bf74d9321_grande.jpeg"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/SALE/back-img/demi-lovato-tell-me-you-love-me-standard-dia-cd_d425a658ef4549e58038613bf74d9321_grande.jpeg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    Demi Lovato - Tell Me You Love Me (Standard) - Đĩa CD
+                  </h4>
+                  <del class="sale-price">300,000đ</del> <span class="price">240,000₫</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+                <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/SALE/product-feature-img/christina_aguilera_-_liberation_-_dia_cd_grande.jpg"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/SALE/back-img/christina_aguilera_-_liberation_-_dia_cd_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    Christina Aguilera - Liberation - Đĩa CD
+                  </h4>
+                  <del class="sale-price">320,000đ</del> <span class="price">256,000đ</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+                <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/SALE/product-feature-img/katy-perry-witness-standard-di-a-cd_9e38f0db5c434e7caf884d545c0e3caf_grande.jpg"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/SALE/back-img/katy-perry-witness-standard-di-a-cd_9e38f0db5c434e7caf884d545c0e3caf_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    Katy Perry - Witness (Standard) - Đĩa CD
+                  </h4>
+                  <del class="sale-price">250,000đ</del> <span class="price">200,000₫</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+                <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/SALE/product-feature-img/avril-lavigne-love-sux-dia-cd_8e3289458f0f4c528014ce3bb4a6bca8_grande.jpeg"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/SALE/back-img/avril-lavigne-love-sux-dia-cd_8e3289458f0f4c528014ce3bb4a6bca8_grande.jpeg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    Avril Lavigne - Love Sux - ĐĨA CD
+                  </h4>
+                  <del class="sale-price">425,000đ</del> <span class="price">340,000₫</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+                <!-- start product -->
+                <div class="product">
+                <div class="img-container" style="position: relative;">
+                  <img
+                    src="./assets/back-images/SALE/product-feature-img/elvis-phuong-1_tinh-ca-cho-em_1adea92b632e44beb3d4eaaa8d07a052_grande.jpg"
+                    alt="product_item"
+                    class="img_product"
+                  />
+                  <img src="./assets/back-images/SALE/back-img/elvis-phuong-1_tinh-ca-cho-em_1adea92b632e44beb3d4eaaa8d07a052_grande.jpg" alt="lan_nha" class="back_img">
+                <div class="preview"><a href="#"><i class="fa-solid fa-eye"></i></a></div>
+                </div>
+                  <h4 class="product_name">
+                    Elvis Phương - Tình Ca Cho Em (Có Chữ Ký) - Đĩa CD
+                  </h4>
+                  <del class="sale-price">250,000đ</del> <span class="price">200,000₫</span>
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                    <input type="hidden" name="id" value="1129006004" />
+                    <!-- <input type="submit" value="Buy now" class="btn" /> -->
+                    <button type="submit" name="add" class="add_to_cart">Thêm vào giỏ</button>
+                  </form>
+                  </form>
+                </div>
+                <!-- end product -->
+              </div>
+          </div>
+          <div class="slider-btn-2">
+            <div class="left"><i class="fa-solid fa-angle-left"></i></div>
+            <div class="right"><i class="fa-solid fa-angle-right"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
     
     <!-- FOOTER -->
     <div id="footer"></div>
 
     <!-- import js -->
     <script src="./js/slider.js"></script>
+    <script src="./js/slider-product.js"></script>
     <script>
       // Load the header
-      fetch('header.html')
-          .then(response => response.text())
-          .then(data => {
-              document.getElementById('header').innerHTML = data;
-      });
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
       // load the footer
-      fetch('footer.html')
-          .then(response => response.text())
-          .then(data => {
-              document.getElementById('footer').innerHTML = data;
-      });
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
     </script>
   </body>
 </html>
