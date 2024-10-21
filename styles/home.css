@@ -84,6 +84,10 @@ video {
   width: 100%;
 }
 /* highlight */
+.product {
+  width: 25%;
+  margin-left: 10px;
+}
 .wrapper {
   position: relative;
   box-sizing: border-box;
@@ -96,21 +100,7 @@ video {
   overflow: hidden;
   scroll-behavior: smooth;
 }
-.carousel .dragging {
-  scrollbar-width: auto;
-  cursor: grab;
-}
-.carousel .dragging img {
-  pointer-events: none;
-}
-.carousel img {
-  width: calc(100% / 5);
-  object-fit: cover;
-  margin-left: 14px;
-}
-.carousel img:first-child {
-  margin-left: 0px;
-}
+
 .wrapper i {
   background-color: #181818;
   height: 46px;
@@ -126,69 +116,105 @@ video {
   transform: translateY(-50%);
   color: #e70808;
 }
-.wrapper i:first-child {
+/* .wrapper i:first-child {
   left: 10px;
   display: none;
 }
 .wrapper i:last-child {
   right: 10px;
-}
-.carousel img {
+} */
+/* Định dạng container của ảnh */
+.img-container {
+  position: relative;
   overflow: hidden;
-  max-width: 100%;
-  transition: opacity 1s ease 0s, transform 1s ease 0s;
+  display: inline-block;
+}
+
+.img_product {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+/* Hiệu ứng lớp phủ đen mờ */
+.img-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0;
+}
+
+/* Khi hover, ảnh phóng to và lớp phủ hiện ra */
+.img-container:hover img {
+  transform: scale(1.1);
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.img-container:hover::after {
   opacity: 1;
 }
-.carousel img:hover {
-  opacity: 1;
-  filter: alpha(opacity = 80);
-  transform: scale3d(1.1, 1.1, 1);
-}
-/* new release  */
-.wrapper .divide {
-  width: calc(33.3% - 20px);
-  float: left;
+
+.slider-product-2 {
   display: flex;
-  flex-wrap: wrap;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
   margin: 10px;
 }
-.wrapper .divide:nth-child(even) {
-  flex-wrap: wrap-reverse;
+
+.slider-product-2 div {
+  flex: none;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
-.divide::after {
-  content: "";
-  clear: both;
+
+.slider-product-2::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-btn-2 div {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  background-color: #181818;
+}
+
+.arrivals:hover .slider-btn-2 {
   display: block;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-.divide img:first-of-type {
-  clear: both;
-  width: 100%;
-  height: 80%;
-  margin: 0 0 10px 0;
+.slider-product-2 i {
+  color: aliceblue;
+  background-color: #181818;
 }
-.divide img {
-  width: calc(50% - 20px);
-  float: left;
-  height: 20%;
-  margin: 0 10px 10px 10px;
+.right {
+  right: 55px;
+  height: 110%;
+  visibility: hidden;
 }
-.carousel .dragging .divide {
-  pointer-events: none;
+
+.left {
+  left: 10px;
+  height: 110%;
+  visibility: hidden;
 }
-.carousel .divide {
-  width: calc(100% / 4);
-  object-fit: cover;
-  margin-left: 14px;
+.wrapper.gallery-wrap:hover .right {
+  visibility: unset;
 }
-.carousel .divide:first-child {
-  margin-left: 0px;
+.wrapper.gallery-wrap:hover .left {
+  visibility: unset;
+  transition: transform 1.5s ease-in-out;
 }
-.carousel .divide {
-  overflow: hidden;
-  max-width: 100%;
-  transition: opacity 1s ease 0s, transform 1s ease 0s;
-  opacity: 1;
+
+@media only screen and (max-width: 700px) {
+  .slider-btn-2 div {
+    top: 35px;
+  }
 }
+/* new release  */
 
 /* responsive */
 @media only screen and (min-width: 900px) and (max-width: 1024px) {
