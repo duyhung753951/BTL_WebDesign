@@ -270,11 +270,15 @@ video {
 }
 .overlay p {
   color: #e70808;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-}
+  font-size: 13px;
+  font-weight: bolder;
 
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.overlay span {
+  font-weight: lighter;
+}
 /* responsive */
 @media only screen and (min-width: 900px) and (max-width: 1024px) {
   .header .wrapper .nav li {
@@ -291,9 +295,6 @@ video {
   }
 }
 @media only screen and (max-width: 900px) {
-  .carousel img {
-    width: calc(100% / 2);
-  }
   .header .wrapper .nav li {
     float: right;
     padding: 0 20px 0 20px;
@@ -305,6 +306,13 @@ video {
   .nav {
     margin: 0;
     width: 100%;
+  }
+  .overlay p {
+    color: #e70808;
+    font-size: 10px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
 }
 @media only screen and (max-width: 550px) {
