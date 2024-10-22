@@ -84,6 +84,10 @@ video {
   width: 100%;
 }
 /* highlight */
+.product {
+  width: 25%;
+  margin-left: 10px;
+}
 .wrapper {
   position: relative;
   box-sizing: border-box;
@@ -96,21 +100,7 @@ video {
   overflow: hidden;
   scroll-behavior: smooth;
 }
-.carousel .dragging {
-  scrollbar-width: auto;
-  cursor: grab;
-}
-.carousel .dragging img {
-  pointer-events: none;
-}
-.carousel img {
-  width: calc(100% / 5);
-  object-fit: cover;
-  margin-left: 14px;
-}
-.carousel img:first-child {
-  margin-left: 0px;
-}
+
 .wrapper i {
   background-color: #181818;
   height: 46px;
@@ -126,70 +116,169 @@ video {
   transform: translateY(-50%);
   color: #e70808;
 }
-.wrapper i:first-child {
-  left: 10px;
-  display: none;
-}
-.wrapper i:last-child {
-  right: 10px;
-}
-.carousel img {
+
+/* Định dạng container của ảnh */
+.img-container {
+  position: relative;
   overflow: hidden;
-  max-width: 100%;
-  transition: opacity 1s ease 0s, transform 1s ease 0s;
-  opacity: 1;
+  display: inline-block;
+  margin: 0;
 }
-.carousel img:hover {
-  opacity: 1;
-  filter: alpha(opacity = 80);
-  transform: scale3d(1.1, 1.1, 1);
-}
-/* new release  */
-.wrapper .divide {
-  width: calc(33.3% - 20px);
-  float: left;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px;
-}
-.wrapper .divide:nth-child(even) {
-  flex-wrap: wrap-reverse;
-}
-.divide::after {
-  content: "";
-  clear: both;
-  display: block;
-}
-.divide img:first-of-type {
-  clear: both;
+
+.img_product {
   width: 100%;
-  height: 80%;
-  margin: 0 0 10px 0;
+  transition: transform 0.3s ease;
 }
-.divide img {
-  width: calc(50% - 20px);
-  float: left;
-  height: 20%;
-  margin: 0 10px 10px 10px;
+/* Hiệu ứng lớp phủ đen mờ */
+.highlight .img-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0;
 }
-.carousel .dragging .divide {
-  pointer-events: none;
+
+/* Khi hover, ảnh phóng to và lớp phủ hiện ra */
+.highlight .img-container:hover img {
+  transform: scale(1.1);
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-.carousel .divide {
-  width: calc(100% / 4);
-  object-fit: cover;
-  margin-left: 14px;
-}
-.carousel .divide:first-child {
-  margin-left: 0px;
-}
-.carousel .divide {
-  overflow: hidden;
-  max-width: 100%;
-  transition: opacity 1s ease 0s, transform 1s ease 0s;
+
+.highlight .img-container:hover::after {
   opacity: 1;
 }
 
+.slider-product-2 {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  margin: 10px;
+}
+
+.slider-product-2 div {
+  flex: none;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.slider-product-2::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-btn-2 div {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  background-color: #181818;
+}
+
+.highlight:hover .slider-btn-2 {
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.slider-product-2 i {
+  color: aliceblue;
+  background-color: #181818;
+}
+.right {
+  right: 55px;
+  height: 110%;
+  visibility: hidden;
+}
+
+.left {
+  left: 10px;
+  height: 110%;
+  visibility: hidden;
+}
+.wrapper.gallery-wrap:hover .right {
+  visibility: unset;
+}
+.wrapper.gallery-wrap:hover .left {
+  visibility: unset;
+  transition: transform 1.5s ease-in-out;
+}
+
+@media only screen and (max-width: 700px) {
+  .slider-btn-2 div {
+    top: 35px;
+  }
+}
+/* new release  */
+.slider-product-2 {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Hiệu ứng chuyển mượt */
+}
+.release .product {
+  width: 20%;
+}
+.release .product .img-container {
+  width: 100%;
+  padding: 5px;
+}
+.release .product:nth-child(even) .img-container {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+.release .product .img-container .item-2,
+.release .product .img-container .item-3 {
+  float: left;
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.release .product .img-container .item-1 {
+  float: left;
+  clear: both;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Khi hover, ảnh phóng to và lớp phủ hiện ra */
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #faad68; /* Màu vàng với độ mờ */
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0); /* Bắt đầu từ tâm với scale 0 */
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Hiệu ứng mượt mà */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container.item-1:hover .overlay {
+  opacity: 0.8; /* Hiển thị lớp phủ */
+  transform: translate(-50%, -50%) scale(1); /* Phóng lớp phủ ra từ tâm */
+}
+.img-container.item-2:hover .overlay {
+  opacity: 0.8; /* Hiển thị lớp phủ */
+  transform: translate(-50%, -50%) scale(1); /* Phóng lớp phủ ra từ tâm */
+}
+.img-container.item-3:hover .overlay {
+  opacity: 0.8; /* Hiển thị lớp phủ */
+  transform: translate(-50%, -50%) scale(1); /* Phóng lớp phủ ra từ tâm */
+}
+.overlay p {
+  color: #e70808;
+  font-size: 13px;
+  font-weight: bolder;
+
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.overlay span {
+  font-weight: lighter;
+}
 /* responsive */
 @media only screen and (min-width: 900px) and (max-width: 1024px) {
   .header .wrapper .nav li {
@@ -206,9 +295,6 @@ video {
   }
 }
 @media only screen and (max-width: 900px) {
-  .carousel img {
-    width: calc(100% / 2);
-  }
   .header .wrapper .nav li {
     float: right;
     padding: 0 20px 0 20px;
@@ -220,6 +306,13 @@ video {
   .nav {
     margin: 0;
     width: 100%;
+  }
+  .overlay p {
+    color: #e70808;
+    font-size: 10px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
 }
 @media only screen and (max-width: 550px) {
