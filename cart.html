@@ -7,6 +7,8 @@
     <link rel="icon" href="./assets/icon/logo-favicon.ico">
     <link rel="stylesheet" href="./styles/general.css">
     <link rel="stylesheet" href="styles/cart.css">
+    <link rel="stylesheet" href="./styles/side-bar.css">
+    <link rel="stylesheet" href="./styles/header.css">
     
     <!-- import font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -20,7 +22,205 @@
 <body>
 
 <!-- HEADER -->
-<div id="header"></div>
+<!-- <div id="header"></div> -->
+<!-- SIDE BAR -->
+  <!-- Thanh sidebar responsive -->
+  <div class="side-bar">
+    <div class="side-bar-header">
+      <div style="max-height: 40px;">
+        <div><h3>Hãng Đĩa Thế Kỷ</h3></div>
+        <button id="side-bar-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+    <div class="side-bar-content">
+      <div class="side-bar-items nav-search">
+        <form action="/search">
+          <input type="search" class="input-field" placeholder="Tìm kiếm..." aria-label="Tìm kiếm..." autocomplete="off"/>
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+      <div class="side-bar-nav">
+        <ul>
+          <li class="side-bar-items">HOME</li>
+          <li class="side-bar-items">
+            <a href="#">BẢN TIN THỜI ĐẠI</a>
+            <div class="side-bar-toggle">
+              <a>
+                <i class="fa-solid fa-plus"></i>
+              </a>
+            </div>
+          </li>
+          <li class="side-bar-items">
+            <a href="#">DỊCH VỤ</a>
+            <div class="side-bar-toggle">
+              <a>
+                <i class="fa-solid fa-plus"></i>
+              </a>
+            </div>
+          </li>
+          <li class="side-bar-items">
+            <a href="#">SHOP</a>
+            <div class="side-bar-toggle">
+              <a>
+                <i class="fa-solid fa-plus"></i>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>  
+  <div id="overlay"></div>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="wrapper">
+        <div class="header-top col-12">
+          <div class="header-item header-account col-12">
+            <div class="account-hover">
+              <span>
+                <i class="fa-solid fa-gear" style="margin-right: 4px;"></i> Tài Khoản <i class="fa-solid fa-circle-chevron-down" style="font-size: 8px;"></i>
+              </span>
+              <ul>
+                <li>
+                  <a href="#" class="customer_login_link"><i class="fa-regular fa-face-smile"></i> Đăng nhập</a>
+                </li>
+                <li>
+                  <a href="#" class="customer_register_link"><i class="fa fa-key"></i> Tạo tài khoản</a>
+                </li>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-regular fa-star"></i> Được yêu thích nhất</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-regular fa-heart"></i> Sản phẩm yêu thích</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-logo col-12">
+            <a href="./home.html"><img src="./assets/icon/logo.png" alt="logo-web"/></a>
+          </div>
+          <div class="header-item header-shop col-12">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a>
+          </div>
+        </div>
+        <!-- HEADER NAVBAR -->
+        <div class="">
+          <div class="main-menu">
+            <nav class="header-nav">
+              <ul class="header-navul-1">
+                <li class="nav-gohome">  
+                  <a href="./home.html">
+                    <img src="./assets/icon/icon-home.png" alt="" class="go-home">
+                  </a>
+                </li>
+                <li class="nav-item"><a href="./home.html">HOME</a></li>
+                <li class="nav-item">
+                  <a href="#">BẢN TIN THỜI ĐẠI <i class="fas fa-chevron-down"></i></a>
+                  <ul class="nav-dropdown">
+                    <li>
+                      <a href="#">US-UK</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#">DỊCH VỤ <i class="fas fa-chevron-down"></i></a>
+                  <ul class="nav-dropdown">
+                    <li>
+                      <a href="#">Phát Hành Vật Lý</a>
+                    </li>
+                    <li>
+                      <a href="#">Phát Hành Nhạc Số</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item" style="position: static;">
+                  <a href="#">SHOP <i class="fa-solid fa-chevron-down"></i></a>
+                  <ul class="mega-menu-nav-dropdown col-12">
+                    <li class="mega-menu">
+                        <div class="wrapper-menu">
+                          <div class="menu-item">
+                            <h3>ẤN BẢN THỜI ĐẠI</h3>
+                            <ul class="super">
+                              <li><a href="#">Ấn Bản Có Chữ Ký</a></li>
+                              <li><a href="#">CD + DVD</a></li>
+                              <li><a href="#">Băng Cassette</a></li>
+                              <li><a href="#">Đĩa đơn</a></li>
+                              <li><a href="#">Times' Merchandise</a></li>
+                            </ul>
+                          </div>
+                          <div class="menu-item">
+                            <h3>ĐĨA HÁT VIỆT NAM</h3>
+                            <ul class="super">
+                              <li><a href="#">Ấn Bản Có Chữ Ký</a></li>
+                              <li><a href="#">CD + DVD</a></li>
+                              <li><a href="#">Đĩa than</a></li>
+                              <li><a href="#">Băng Cassette</a></li>
+                              <li><a href="#">Đĩa đơn</a></li>
+                              <li><a href="#">Băng cối</a></li>
+                            </ul>
+                          </div>
+                          <div class="menu-item">
+                            <h3>BĂNG ĐĨA QUỐC TẾ</h3>
+                            <ul class="super">
+                              <li><a href="#">Autographed</a></li>
+                              <li><a href="#">CD + DVD</a></li>
+                              <li><a href="#">Vinyl</a></li>
+                              <li><a href="#">Single</a></li>
+                              <li><a href="#">Cassette Tape</a></li>
+                              <li><a href="#">Reel To Reel</a></li>
+                              <li><a href="#">8-Track Tape</a></li>
+                            </ul>
+                          </div>
+                          <div class="menu-item">
+                            <h3>TIMES LIFESTYLE</h3>
+                            <ul class="super">
+                              <li><a href="#">Audio</a></li>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">Book</a></li>
+                              <li><a href="#">Magazine</a></li>
+                              <li><a href="#">Tech</a></li>
+                              <li><a href="#">Beauty</a></li>
+                              <li><a href="#">Merchadise</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="header-navul-2"> 
+                <li class="nav-item nav-search">
+                  <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                  <input type="search" class="input-field" placeholder="Tìm kiếm..." aria-label="Tìm kiếm..." autocomplete="off"/>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="respon-navbar">
+            <div class="wrapper">
+              <div class="respon-navbar-item col-6">
+                <div class="active-side-bar">
+                  <input type="checkbox" id="check">
+                  <label for="check" id="side-bar-open">
+                    <i class="fa-solid fa-bars" id="open-btn"></i>
+                  </label>
+                </div>
+              </div>
+              <div class="respon-navbar-item col-6">
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  
 
 <main>
     <!-- BreadCrumb -->
@@ -129,14 +329,15 @@
 <!-- import js script -->
 <script src="js/cart/cart.js"></script>
 <script src="js/cart/quantity_button.js"></script>
+<script src="./js/side-bar.js"></script>
 
 <script>
-    // Load the header
-    fetch('header.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('header').innerHTML = data;
-    });
+    // // Load the header
+    // fetch('header.html')
+    //     .then(response => response.text())
+    //     .then(data => {
+    //         document.getElementById('header').innerHTML = data;
+    // });
     // load the footer
     fetch('footer.html')
         .then(response => response.text())
