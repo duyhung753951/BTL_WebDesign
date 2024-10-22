@@ -10,11 +10,7 @@ let count = 0;
 function startAutoplay(slider) {
   return setInterval(function () {
     // Kiểm tra nếu cuộn đến cuối bộ sưu tập
-    if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
-      slider.scrollLeft = 0; // Quay về đầu
-    } else {
-      slider.scrollLeft += scrollNumber;
-    }
+    slider.scrollLeft += scrollNumber;
   }, autoplaySpeed);
 }
 
