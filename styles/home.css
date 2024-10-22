@@ -116,13 +116,7 @@ video {
   transform: translateY(-50%);
   color: #e70808;
 }
-/* .wrapper i:first-child {
-  left: 10px;
-  display: none;
-}
-.wrapper i:last-child {
-  right: 10px;
-} */
+
 /* Định dạng container của ảnh */
 .img-container {
   position: relative;
@@ -135,7 +129,7 @@ video {
   transition: transform 0.3s ease;
 }
 /* Hiệu ứng lớp phủ đen mờ */
-.img-container::after {
+.highlight .img-container::after {
   content: "";
   position: absolute;
   top: 0;
@@ -148,12 +142,12 @@ video {
 }
 
 /* Khi hover, ảnh phóng to và lớp phủ hiện ra */
-.img-container:hover img {
+.highlight .img-container:hover img {
   transform: scale(1.1);
   transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.img-container:hover::after {
+.highlight .img-container:hover::after {
   opacity: 1;
 }
 
@@ -182,7 +176,7 @@ video {
   background-color: #181818;
 }
 
-.arrivals:hover .slider-btn-2 {
+.highlight:hover .slider-btn-2 {
   display: block;
   transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -215,6 +209,70 @@ video {
   }
 }
 /* new release  */
+.slider-product-2 {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Hiệu ứng chuyển mượt */
+}
+.release .product {
+  width: 20%;
+}
+.release .product .img-container {
+  width: 100%;
+  padding: 5px;
+}
+.release .product:nth-child(even) .img-container {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+.release .product .img-container .item-2,
+.release .product .img-container .item-3 {
+  float: left;
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.release .product .img-container .item-1 {
+  float: left;
+  clear: both;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Khi hover, ảnh phóng to và lớp phủ hiện ra */
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #faad68; /* Màu vàng với độ mờ */
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0); /* Bắt đầu từ tâm với scale 0 */
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Hiệu ứng mượt mà */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container.item-1:hover .overlay {
+  opacity: 0.8; /* Hiển thị lớp phủ */
+  transform: translate(-50%, -50%) scale(1); /* Phóng lớp phủ ra từ tâm */
+}
+.img-container.item-2:hover .overlay {
+  opacity: 0.8; /* Hiển thị lớp phủ */
+  transform: translate(-50%, -50%) scale(1); /* Phóng lớp phủ ra từ tâm */
+}
+.img-container.item-3:hover .overlay {
+  opacity: 0.8; /* Hiển thị lớp phủ */
+  transform: translate(-50%, -50%) scale(1); /* Phóng lớp phủ ra từ tâm */
+}
+.overlay p {
+  color: #e70808;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
 
 /* responsive */
 @media only screen and (min-width: 900px) and (max-width: 1024px) {
