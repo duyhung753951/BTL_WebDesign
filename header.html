@@ -137,8 +137,73 @@
               </ul>
             </nav>
           </div>
+          <div class="respon-navbar">
+            <div class="wrapper">
+              <div class="respon-navbar-item col-6">
+                <div class="active-side-bar">
+                  <input type="checkbox" id="check">
+                  <label for="check" id="side-bar-open">
+                    <i class="fa-solid fa-bars" id="open-btn"></i>
+                  </label>
+                </div>
+              </div>
+              <div class="respon-navbar-item col-6">
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
+    <!-- Thanh sidebar responsive -->
+    <div class="side-bar">
+    <div class="side-bar-header">
+      <div style="max-height: 40px;">
+        <div><h3>Hãng Đĩa Thế Kỷ</h3></div>
+        <button class="side-bar-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+    <div class="side-bar-content">
+      <div class="side-bar-items nav-search">
+        <form action="/search">
+          <input type="search" class="input-field" placeholder="Tìm kiếm..." aria-label="Tìm kiếm..." autocomplete="off"/>
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+      <div class="side-bar-nav">
+        <ul>
+          <li class="side-bar-items">HOME</li>
+          <li class="side-bar-items">
+            <a href="#">BẢN TIN THỜI ĐẠI</a>
+            <div class="side-bar-toggle">
+              <a>
+                <i class="fa-solid fa-plus"></i>
+              </a>
+            </div>
+          </li>
+          <li class="side-bar-items">
+            <a href="#">DỊCH VỤ</a>
+            <div class="side-bar-toggle">
+              <a>
+                <i class="fa-solid fa-plus"></i>
+              </a>
+            </div>
+          </li>
+          <li class="side-bar-items">
+            <a href="#">SHOP</a>
+            <div class="side-bar-toggle">
+              <a>
+                <i class="fa-solid fa-plus"></i>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
 </htm>

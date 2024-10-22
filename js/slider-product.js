@@ -51,3 +51,4 @@ arrivals.forEach((slider, index) => {
   });
 
 });
+
