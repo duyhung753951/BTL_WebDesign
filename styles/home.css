@@ -1,6 +1,7 @@
 body {
   background-color: #e73c3c;
   font-family: "Fredoka One", cursive;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 
@@ -187,17 +188,18 @@ video {
 }
 .right {
   right: 55px;
-  height: 110%;
+  height: 122%;
   visibility: hidden;
 }
 
 .left {
   left: 10px;
-  height: 110%;
+  height: 122%;
   visibility: hidden;
 }
 .wrapper.gallery-wrap:hover .right {
   visibility: unset;
+  transition: transform 1.5s ease-in-out;
 }
 .wrapper.gallery-wrap:hover .left {
   visibility: unset;
@@ -288,6 +290,126 @@ video {
 .youtube {
   float: right;
 }
+.content_youtube::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.content_youtube {
+  background-color: #faad68;
+}
+.infor_youtube {
+  margin: 10px;
+  width: 30%;
+}
+.infor_youtube h2 {
+  font-family: monospace;
+  color: #e73c3c;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 20px;
+}
+.infor_youtube h3 {
+  padding: 0 20px;
+  color: #50222b;
+  font-size: 14px;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.infor_youtube p {
+  line-height: normal;
+  padding: 20px;
+  overflow: hidden;
+  text-align: justify;
+  color: #50222b;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: none;
+}
+.download {
+  background-color: #faad68;
+  overflow: hidden;
+}
+.download input {
+  padding: 10px;
+  margin: 20px;
+}
+.download input:hover {
+  background-color: #181818;
+  color: aliceblue;
+  transition: 0.3s ease-in-out;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* DEBUT ALBUMS */
+.wrapper .gallery-wrap h3 {
+  padding-top: 20px;
+  font-weight: 5px;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  color: #181818;
+  font-family: "Fredoka One", cursive;
+}
+.Debut .product {
+  width: 15%;
+}
+.Debut .product .img-container.debut img {
+  padding: 3px;
+  box-sizing: border-box;
+}
+/* Hiệu ứng lớp phủ đen mờ */
+.Debut .img-container .debut::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0;
+}
+.Debut .img-container .debut {
+  overflow: hidden;
+}
+/* Khi hover, ảnh phóng to và lớp phủ hiện ra */
+.Debut .img-container .debut:hover img {
+  transform: scale(1.1);
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.Debut .img-container .debut:hover::after {
+  opacity: 0.5;
+}
+/* indie city */
+.indie_city .product {
+  width: 10%;
+}
+.indie_city .product .img-container img {
+  padding: 5px;
+}
+/* Khi hover, ảnh phóng to và lớp phủ hiện ra */
+.indie_city .img-container .debut:hover img {
+  transform: scale(1.1);
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.indie_city .img-container .debut:hover::after {
+  opacity: 0.5;
+}
+/* Hiệu ứng lớp phủ đen mờ */
+.indie_city .img-container .debut::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0;
+}
 /* responsive */
 @media only screen and (min-width: 900px) and (max-width: 1024px) {
   .header .wrapper .nav li {
@@ -339,5 +461,10 @@ video {
   .nav {
     margin: 0;
     width: 100%;
+  }
+  .video,
+  .infor_youtube {
+    width: 100%;
+    margin: auto;
   }
 }
