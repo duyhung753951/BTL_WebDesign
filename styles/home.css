@@ -279,6 +279,15 @@ video {
 .overlay span {
   font-weight: lighter;
 }
+
+/* BANNER */
+.banner_release img {
+  width: 100%;
+}
+/* YOUTUBE */
+.youtube {
+  float: right;
+}
 /* responsive */
 @media only screen and (min-width: 900px) and (max-width: 1024px) {
   .header .wrapper .nav li {
