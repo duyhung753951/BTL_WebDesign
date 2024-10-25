@@ -17,11 +17,11 @@ previewButtons.forEach((button) => {
     document.getElementById("preview-descrip").innerText = productInfo;
     
     // Display the preview (assuming you have CSS to control visibility)
-    document.querySelector(".preview-background").style.display = "block";
+    document.querySelector(".preview-background").classList.add("show");
   });
 });
 
 // Close preview event
 document.getElementById("preview-close").addEventListener("click", function() {
-  document.querySelector(".preview-background").style.display = "none";
+  document.querySelector(".preview-background").classList.remove("show");
 });
