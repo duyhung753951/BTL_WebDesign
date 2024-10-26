@@ -266,28 +266,24 @@
  <!-- FOOTER -->
 <div id="footer"></div>
 
-<!-- import js script -->
-<script src="js/cart/setUp.js"></script>
-<script src="./js/side-bar.js"></script>
-<script src="js/cart/updateCartFooter.js"></script>
-<script src="js/cart/updateCart.js"></script>
-<script src="js/cart/quantity_button.js"></script>
-<script src="js/cart/updatePrice.js"></script>
-<script src="js/cart/removeFromCart.js"></script>
+<!-- Import JS scripts with defer -->
+<script src="js/cart/setUp.js" defer></script>
+<script src="./js/side-bar.js" defer></script>
+<script src="js/cart/quantity_button.js" defer></script>
+<script src="js/cart/updatePrice.js" defer></script>
+<script src="js/cart/removeFromCart.js" defer></script>
+<script src="js/cart/updateCart.js" defer></script>
+<script src="js/cart/updateCartFooter.js" defer></script>
+
 <script>
-    // // Load the header
-    // fetch('header.html')
-    //     .then(response => response.text())
-    //     .then(data => {
-    //         document.getElementById('header').innerHTML = data;
-    // });
-    // load the footer
+    // Load the footer
     fetch('footer.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer').innerHTML = data;
-    });
+        });
 </script>
+
 
 </body>
 </html>
