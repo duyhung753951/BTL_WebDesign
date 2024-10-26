@@ -36,9 +36,9 @@ function updateCart() {
                     <a href="" class="product-name">${item.name}</a>
                     <small>${smallText}</small>
                     <p>Hãng Đĩa Thời Đại</p>
-                    <a href="/cart/change?line=${item.id}&amp;quantity=0" class="cart-remove-btn">
-                        <small>Xóa</small>
-                    </a>
+                    <button type="button" class="cart-remove-btn" data-id="${item.id}" onclick="removeFromCart(event, '${item.name}')">
+                        Xóa
+                    </button>
                 </td>
                 <td data-label="Giá">
                     <span class="product-price">${item.price.toLocaleString()}₫</span>

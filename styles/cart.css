@@ -87,8 +87,16 @@ main {
 }
 
 .cart-remove-btn {
-    color: red;
-    font-weight: bold;
+    color: white;
+    background-color: red;
+    border : 1px none red;
+    border-radius: 3px;
+    padding : 30px auto;
+    transition: 0.2s;
+}
+.cart-remove-btn:hover {
+    background-color: black;
+    box-shadow: 1px 1px 0.3px black;
 }
 
 
