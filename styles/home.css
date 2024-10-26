@@ -1,6 +1,7 @@
 body {
   background-color: #e73c3c;
   font-family: "Fredoka One", cursive;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 
@@ -187,23 +188,29 @@ video {
 }
 .right {
   right: 55px;
-  height: 110%;
+  height: 122%;
   visibility: hidden;
 }
 
 .left {
   left: 10px;
-  height: 110%;
+  height: 122%;
   visibility: hidden;
 }
 .wrapper.gallery-wrap:hover .right {
   visibility: unset;
+  transition: transform 1.5s ease-in-out;
 }
 .wrapper.gallery-wrap:hover .left {
   visibility: unset;
   transition: transform 1.5s ease-in-out;
 }
-
+.product-2.highlight .slider-btn-2 i {
+  font-size: 30px;
+  opacity: 0.5;
+  color: #e70808;
+  background-color: #181818;
+}
 @media only screen and (max-width: 700px) {
   .slider-btn-2 div {
     top: 35px;
@@ -255,32 +262,262 @@ video {
   justify-content: center;
   align-items: center;
 }
-
+.img-container.item-1:hover img {
+  filter: blur(2px);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.img-container.item-2:hover img {
+  filter: blur(2px);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.img-container.item-3:hover img {
+  filter: blur(2px);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 .img-container.item-1:hover .overlay {
-  opacity: 0.8; /* Hiển thị lớp phủ */
+  opacity: 0.6; /* Hiển thị lớp phủ */
   transform: translate(-50%, -50%) scale(1); /* Phóng lớp phủ ra từ tâm */
 }
 .img-container.item-2:hover .overlay {
-  opacity: 0.8; /* Hiển thị lớp phủ */
+  opacity: 0.6; /* Hiển thị lớp phủ */
   transform: translate(-50%, -50%) scale(1); /* Phóng lớp phủ ra từ tâm */
 }
 .img-container.item-3:hover .overlay {
-  opacity: 0.8; /* Hiển thị lớp phủ */
+  opacity: 0.6; /* Hiển thị lớp phủ */
   transform: translate(-50%, -50%) scale(1); /* Phóng lớp phủ ra từ tâm */
 }
+
 .overlay p {
   color: #e70808;
   font-size: 13px;
   font-weight: bolder;
-
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .overlay span {
   font-weight: lighter;
 }
+.product-2.Release .slider-btn-2 i {
+  font-size: 30px;
+  opacity: 1;
+  color: #e70808;
+  background-color: #faad68;
+}
+/* BANNER */
+.banner_release img {
+  width: 100%;
+}
+.banner_release {
+  width: 90%;
+  margin: auto;
+}
+/* YOUTUBE */
+.youtube {
+  float: right;
+}
+.content_youtube::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.content_youtube {
+  background-color: #faad68;
+}
+.infor_youtube {
+  margin: 10px;
+  width: 30%;
+}
+.infor_youtube h2 {
+  font-family: monospace;
+  color: #e73c3c;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 20px;
+}
+.infor_youtube h3 {
+  padding: 0 20px;
+  color: #50222b;
+  font-size: 14px;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.infor_youtube p {
+  line-height: normal;
+  padding: 20px;
+  overflow: hidden;
+  text-align: justify;
+  color: #50222b;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: none;
+}
+.download {
+  background-color: #faad68;
+  overflow: hidden;
+}
+.download input {
+  padding: 10px;
+  margin: 20px;
+}
+.download input:hover {
+  background-color: #181818;
+  color: aliceblue;
+  transition: 0.3s ease-in-out;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* DEBUT ALBUMS */
+.product-2.Debut_content {
+  position: relative;
+}
+.product-2.Debut_content .slider-btn-2 i {
+  background-color: #faad68;
+  opacity: 1;
+  color: #181818;
+  position: absolute;
+  top: 40%;
+  font-size: 30px;
+}
+.wrapper .gallery-wrap h3 {
+  padding-top: 20px;
+  font-weight: 5px;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  color: #181818;
+  font-family: "Fredoka One", cursive;
+}
+.Debut .product {
+  width: 15%;
+}
+.Debut .product .img-container.debut img {
+  padding: 3px;
+  box-sizing: border-box;
+}
+/* Hiệu ứng lớp phủ đen mờ */
+.Debut .img-container .debut::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0;
+}
+.Debut .img-container .debut {
+  overflow: hidden;
+}
+/* Khi hover, ảnh phóng to và lớp phủ hiện ra */
+.Debut .img-container .debut:hover img {
+  transform: scale(1.1);
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.Debut .img-container .debut:hover::after {
+  opacity: 0.5;
+}
+/* indie city */
+.indie_city .product {
+  width: 10%;
+}
+.indie_city .product .img-container img {
+  padding: 2px;
+}
+/* Khi hover, ảnh phóng to và lớp phủ hiện ra */
+.indie_city .img-container .debut:hover img {
+  transform: scale(1.05);
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.indie_city .img-container .debut:hover::after {
+  opacity: 0.5;
+}
+/* Hiệu ứng lớp phủ đen mờ */
+.indie_city .img-container .debut::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0;
+}
+.indie_city .slider-product-2 .margin-container {
+  margin: auto;
+}
+/* STORE */
+.wrapper .toward_store {
+  display: flex;
+  margin: 40px 20px;
+}
+.wrapper .toward_store .banner {
+  width: 70%;
+}
+.wrapper .toward_store .store {
+  width: 30%;
+}
+.wrapper .toward_store .banner img {
+  margin: auto;
+  width: 70%;
+}
+.wrapper .toward_store .store img {
+  margin: auto;
+  width: 70%;
+}
+.go-to-store h1 {
+  margin: 0 30px 20px 0px;
+  text-align: left;
+}
+.store .go-to-store {
+  position: relative;
+}
+.store .go-to-store i {
+  background-color: #e73c3c;
+  color: #faad68;
+  position: absolute;
+  top: 25px;
+  font-size: 50px;
+  right: 70px;
+  opacity: 1;
+}
+/* FOOTER */
+.wrapper.footer {
+  display: flex;
+}
+.logo_footer,
+.adress {
+  width: 50%;
+}
+.logo_footer img {
+  width: 25%;
+  margin: 0 40px 0 200px;
+  text-align: center;
+  justify-items: center;
+}
+.adress p {
+  color: #f2d9c3;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 20px 10px 10px 10px;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.logo_footer p {
+  color: #f2d9c3;
+  font-size: 10px;
+  line-height: 30px;
+  padding: 0 10px;
+  margin: 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
 /* responsive */
-@media only screen and (min-width: 900px) and (max-width: 1024px) {
+@media only screen and (min-width: 900px) and (max-width: 1228px) {
   .header .wrapper .nav li {
     float: right;
     padding: 0 20px 0 20px;
@@ -314,8 +551,27 @@ video {
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
+  .store .go-to-store i {
+    font-size: 20px;
+    right: 50px;
+    top: 10px;
+  }
+  section h1,
+  h3,
+  h2 {
+    font-size: 30px;
+    margin: 10px;
+  }
 }
 @media only screen and (max-width: 550px) {
+  h1,
+  h3,
+  h2 {
+    font-size: 30px;
+  }
+  .store .go-to-store i {
+    display: none;
+  }
   .carousel img {
     width: calc(100%);
   }
@@ -330,5 +586,48 @@ video {
   .nav {
     margin: 0;
     width: 100%;
+  }
+  .video,
+  .infor_youtube {
+    width: 100%;
+    margin: auto;
+  }
+  .wrapper.footer {
+    display: block;
+  }
+  .logo_footer,
+  .adress {
+    width: 100%;
+  }
+  .adress p {
+    color: #f2d9c3;
+    font-size: 10px;
+
+    padding: 5px;
+    margin: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  .logo_footer p {
+    color: #f2d9c3;
+    font-size: 10px;
+    padding: 0 5px;
+    margin: 0 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  .logo_footer img {
+    width: 100%;
+    margin: auto;
+  }
+  .release .product .img-container {
+    width: 100%;
+    padding: 0px;
+  }
+  .Debut .product .img-container.debut img {
+    padding: 0px;
+  }
+  .indie_city .product .img-container img {
+    padding: 0px;
   }
 }

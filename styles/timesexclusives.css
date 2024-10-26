@@ -122,7 +122,12 @@
   transition: all ease 300ms;
   visibility: visible;
 }
-.preview a:hover i::before {
+.preview button {
+  border: none;
+  background-color: rgba(0, 0, 0, -0);
+  cursor: pointer;
+}
+.preview button:hover i::before {
   color: #f2d9c3;
 }
 .product:hover button {
