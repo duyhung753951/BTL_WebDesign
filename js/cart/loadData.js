@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.add_to_cart').forEach(button => {
         button.addEventListener('click', function (event) {
             event.preventDefault(); // Prevent form submission
-            alert("Added!");
             
             // Find the closest ancestor's element with 'product' class
             const productElement = button.closest(".product");
