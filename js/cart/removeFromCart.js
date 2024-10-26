@@ -16,11 +16,6 @@ function removeFromCart(event, productName) {
         cartItems = cartItems.filter(item => item.name !== productName);
     }
 
-    // Log the remaining items for debugging
-    for (const item of cartItems) { // Declare item with const
-        console.log(item);
-    }
-
     sessionStorage.setItem('cartItems', JSON.stringify(cartItems)); // Update session storage
     // Optionally update the cart footer or show a message
     updateCartFooter(); // Call this function to recalculate and update the total amount

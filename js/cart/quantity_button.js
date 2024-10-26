@@ -1,13 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const quantityAdjustButtons = document.querySelectorAll('.quantity-adjust-btn');
-
-    quantityAdjustButtons.forEach(button => {
-        button.addEventListener('click', (event) => {
-            const buttonType = event.target.closest('button').classList.contains('js-qty__adjust--minus') ? 'minus' : 'plus';
-            const dataId = event.target.closest('button').getAttribute('data-id');
-            const qtyInput = document.querySelector(`input[data-id="${dataId}"]`);
+    const cartTableBody = document.querySelector('tbody'); // Assuming your buttons are inside a <tbody>
+    
+    cartTableBody.addEventListener('click', (event) => {
+        console.log("Just clicked on sth.");
+        
+        // Check if the clicked element is a quantity adjust button by using closest
+        const button = event.target.closest('.quantity-adjust-btn');
+        if (button) {
+            console.log("that thing is one of the icons.");
+            
+            // Determine the type of button clicked (plus or minus)
+            const buttonType = button.classList.contains('js-qty__adjust--minus') ? 'minus' : 'plus';
+            const productRow = button.closest('.cart-row');
+            const productName = productRow.querySelector('.product-name').textContent; // Get the product name
+            const qtyInput = productRow.querySelector(`.num-qty`);
             let quantity = parseInt(qtyInput.value);
 
+            // Adjust quantity based on button type
             if (buttonType === 'plus') {
                 quantity += 1;
             } else if (buttonType === 'minus') {
@@ -17,14 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
             // Update quantity in input field
             qtyInput.value = quantity;
 
-            // Check if quantity is zero
+            // Remove product if quantity is zero or below, using the product name
             if (quantity <= 0) {
-                const form = qtyInput.closest('form'); // Find the closest form element
-                form.style.display = 'none'; // Hide the form
-                const message = document.createElement('p'); // Create a new paragraph
-                message.innerHTML = 'Please navigate to our <a href="index.html" style="color:red; font-weight:bold;">Home Page</a> and choose some products.'; // Add message
-                form.parentNode.insertBefore(message, form); // Insert message before form
+                removeFromCart(event, productName); // Call removeFromCart with productName
             }
-        });
+        }
     });
 });

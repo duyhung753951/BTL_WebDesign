@@ -16,7 +16,6 @@
     <!-- Roboto Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -220,8 +219,7 @@
   </div>
 
 
-  <!-- Product Information's Form -->
-  <form action="/cart" method="post" novalidate="" class="shopping-cart cart-table-container">
+  <div method="post" novalidate="" class="shopping-cart cart-table-container">
       <!-- This is just the header preview -->
       <table class="cart-table">
         <thead class="cart-row">
@@ -232,7 +230,7 @@
             <th class="text-right">Tổng</th>
           </tr>
         </thead>
-        <!-- This table lays out product's preview, their amounts and the according prices. -->
+        <!-- This Element lays out product's preview, their amounts and the according prices. -->
         <tbody>
             <tr class="cart-row">
               <!-- Product's Information will be updated automatically via JavaScript. -->
@@ -254,12 +252,13 @@
                   </span>
               </p>
               <p><em>Giao hàng &amp; tính thuế khi bán hàng</em></p>
-              <input type="submit" name="update" class="update-cart-btn" value="Cập nhật giỏ hàng">
-              <input type="submit" name="checkout" class="pay-btn" value="Thanh toán">
+              <!-- Update button is for updating the prices acccording to the number of products added. -->
+              <button type="submit" name="update" class="update-cart-btn">Cập nhật giỏ hàng</button>
+              <button type="submit" name="checkout" class="pay-btn">Thanh toán</button>              
           </div>
       </div>
       
-  </form>
+  </div>
 
 </main>
 
