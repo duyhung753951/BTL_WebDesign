@@ -262,24 +262,35 @@ video {
   justify-content: center;
   align-items: center;
 }
-
+.img-container.item-1:hover img {
+  filter: blur(2px);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.img-container.item-2:hover img {
+  filter: blur(2px);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.img-container.item-3:hover img {
+  filter: blur(2px);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 .img-container.item-1:hover .overlay {
-  opacity: 0.8; /* Hiển thị lớp phủ */
+  opacity: 0.6; /* Hiển thị lớp phủ */
   transform: translate(-50%, -50%) scale(1); /* Phóng lớp phủ ra từ tâm */
 }
 .img-container.item-2:hover .overlay {
-  opacity: 0.8; /* Hiển thị lớp phủ */
+  opacity: 0.6; /* Hiển thị lớp phủ */
   transform: translate(-50%, -50%) scale(1); /* Phóng lớp phủ ra từ tâm */
 }
 .img-container.item-3:hover .overlay {
-  opacity: 0.8; /* Hiển thị lớp phủ */
+  opacity: 0.6; /* Hiển thị lớp phủ */
   transform: translate(-50%, -50%) scale(1); /* Phóng lớp phủ ra từ tâm */
 }
+
 .overlay p {
   color: #e70808;
   font-size: 13px;
   font-weight: bolder;
-
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
