@@ -609,4 +609,14 @@ video {
     width: 100%;
     margin: auto;
   }
+  .release .product .img-container {
+    width: 100%;
+    padding: 0px;
+  }
+  .Debut .product .img-container.debut img {
+    padding: 0px;
+  }
+  .indie_city .product .img-container img {
+    padding: 0px;
+  }
 }
