@@ -1,75 +1,61 @@
-
 body, html {
     margin: 0;
     padding: 0;
     height: 200%;
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto';
 }
 
-
-/* the Breadcrumb */
+/* The Breadcrumb */
 .breadcrumb-wrapper {
-    padding: 15px 15px;
-    background-color: #f8f8f8;
+    font-size: 20px;                  
+    padding: 15px;                  
+    background-color: #dad4d4;
     border-bottom: 1px solid #ddd;
-    border: none;
-}
-
-.breadcrumb {
+    margin: 0 auto;                                 
+    box-sizing: border-box; 
     text-align: center;
-    font-size: 20px;
 }
 
-.breadcrumb .inner {
+.inner {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .breadcrumb a {
-    text-decoration: none;
-    color: #7a8794;
-    font-weight: 500;
+    text-decoration: none;            
+    color: #5f5e5e;                
+    font-weight: 500;   
+    font-style: italic;           
 }
-
 .breadcrumb a:hover {
-    text-decoration: underline; 
+    text-decoration: underline;      
 }
-
 
 .breadcrumb span[aria-hidden="true"] {
-    margin: 0 5px;
-    color: #666;
+    margin: 0 5px;                  
+    color: #666;                     
 }
 
 .breadcrumb span:last-child {
-    color: #1e1515;
-    font-weight: 400;
-    text-transform: none;
-    font-style: italic;
+    color: #350808;                  
+    font-weight: 400;                
+    font-style: italic;              
 }
+/* End Breadcrumb */
 
-.breadcrumb-wrapper nav[aria-label="breadcrumbs"] {
-    white-space: nowrap; /* Prevent long text from wrapping */
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-/* End BreadCrumb */
-
-
-
-/* main */
+/* Main */
 main {
-    flex : 1;
+    flex: 1;
 }
 
-
-/* title */
+/* Title */
 .cart-table {
     border-collapse: collapse;  /* Ensure borders are continuous */
     width: 90%; 
-    margin : 0 auto;
+    margin: 0 auto;
 }
 
 .cart-table th {
@@ -89,24 +75,25 @@ main {
 .cart-remove-btn {
     color: white;
     background-color: red;
-    border : 1px none red;
+    border: 1px none red;
     border-radius: 3px;
-    padding : 30px auto;
+    padding: 10px; /* Changed padding from 30px auto to 10px */
     transition: 0.2s;
 }
+
 .cart-remove-btn:hover {
     background-color: black;
     box-shadow: 1px 1px 0.3px black;
 }
 
-
 /* Product review image */
 .cart__image img {
+    min-width: 15px;
     max-width: 250px;
+    width: 100%;
     height: auto;
     border-radius: 4px;
 }
-
 
 /* Text Style for Product review */
 .product-name {
@@ -115,16 +102,16 @@ main {
     text-decoration: none;
     font-weight: 600;
 }
+
 .product-name:hover {
     text-decoration: underline;
 }
 
 main small {
     display: block;
-    margin : 20px auto;
+    margin: 20px auto;
     text-align: left;
 }
-
 
 /* Quantity Selector Container */
 .quantity-selector {
@@ -160,17 +147,15 @@ main small {
     margin: 0; 
     font-size: 16px;
     opacity: 0.5;
-    border : 1px solid black
+    border: 1px solid black;
 }
 
 /* Optional: For Plus/Minus Icons */
 .fallback-text {
     font-size: 20px;
-    padding : 10px 10px;
-    margin : 10px 10px;
+    padding: 10px 10px;
+    margin: 10px 10px;
 }
-
-
 
 /* Buttons */
 .update-cart-btn,
@@ -182,28 +167,33 @@ main small {
 }
 
 .update-cart-btn {
-    background-color: #f2d9c3; /* Green for checkout */
+    background-color: #f2d9c3; /* Changed color to a more subtle green */
     color: #110c0c;
+    border: 1px solid black;
+    transition: 500ms smooth;
 }
 .update-cart-btn:hover {
-    opacity: 0.4; 
+    box-shadow: 0.5px 0.5px 1px rgb(138, 108, 108);
+}
+.update-cart-btn:active {
+    opacity: 0.8;
 }
 
 .pay-btn {
-    background-color: #000000; /* Blue for update */
+    background-color: #000000; /* Black for pay button */
     color: #fff;
 }
+
 .pay-btn:hover {
     opacity: 0.4; 
 }
-
 
 /* Cart Footer Styles */
 .cart-footer {
     display: flex;
     justify-content: space-between;
     width: 90%;
-    margin : 0 auto;
+    margin: 0 auto;
     padding: 10px;
 }
 
@@ -211,16 +201,16 @@ main small {
     flex: 1;
     margin-right: 50px;
 }
+
 .cart-footer-item:last-child {
     margin-right: 0; /* Remove margin from the last item */
 }
 
 #CartSpecialInstructions {
-    width: 600px;  
+    width: 100%;  /* Changed from 600px to 100% for better responsiveness */
     height: 150px; 
     /* resize: none;  Optional: Disable resizing (users won't be able to drag to resize) */
 }
-
 
 /* Subtotal Styles */
 .subtotal-label {
@@ -234,18 +224,25 @@ main small {
     color: #333;
 }
 
-
 /* Responsive Styles */
 @media (max-width: 768px) {
     .cart-footer {
         flex-direction: column;
         align-items: flex-start;
     }
+    
     .cart-footer-item {
         margin-right: 0;
         margin-bottom: 10px;
     }
+
+    /* Added to adjust cart table on smaller screens */
+    .cart-table {
+        width: 100%; /* Ensure the table takes full width */
+    }
+
+    .cart-table th,
+    .cart-table td {
+        padding: 10px; /* Reduced padding for smaller screens */
+    }
 }
-
-
-

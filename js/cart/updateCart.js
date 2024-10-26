@@ -14,7 +14,7 @@ function updateCart() {
 
     // Check if cart is empty
     if (cartItems.length === 0) {
-        cartTableBody.innerHTML = 'Please navigate to our <a href="index.html" style="color:red; font-weight:bold;">Store Page</a> and choose some products.';
+        cartTableBody.innerHTML = 'Your cart is empty. <br>Please navigate to our <a href="index.html" style="color:red; font-weight:bold;">Store Page</a> and choose some products.';
     } else {
         // Append each item to cart table
         cartItems.forEach(item => {

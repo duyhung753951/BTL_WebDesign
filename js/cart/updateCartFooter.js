@@ -8,7 +8,7 @@ function updateCartFooter() {
     // Check if there are product rows (skip the first one)
     if (productRows.length <= 1) {
         totalSum.textContent = '0 ₫'; // Set subtotal to 0 if no products are available
-        cartTableBody.innerHTML = 'Please navigate to our <a href="index.html" style="color:red; font-weight:bold;">Store Page</a> and choose some products.';
+        cartTableBody.innerHTML = 'Your cart is empty. <br>Please navigate to our <a href="index.html" style="color:red; font-weight:bold;">Store Page</a> and choose some products.';
     } else {
         // Calculate the total price from the product totals
         let totalPrice = 0;
