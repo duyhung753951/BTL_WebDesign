@@ -111,6 +111,12 @@ main {
     text-decoration: underline;
 }
 
+main small {
+    display: block;
+    margin : 20px auto;
+    text-align: left;
+}
+
 
 /* Quantity Selector Container */
 .quantity-selector {

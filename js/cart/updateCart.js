@@ -1,28 +1,30 @@
 // Function to update cart HTML
 function updateCart() {
     const cartTableBody = document.querySelector('.cart-table tbody');
-    
     // Check if cartTableBody exists (i.e., if we're on cart.html)
     if (!cartTableBody) {
         console.log("ElementNotFound.");
         return; // Exit the function if cart table doesn't exist
     }
+    const cartItems = JSON.parse(sessionStorage.getItem('cartItems')) || []; // Load cart items from sessionStorage
 
-    const cartItems = JSON.parse(sessionStorage.getItem('cartItems')) || []; // Load cart items from localStorage
-    cartTableBody.innerHTML = ''; // Clear existing content
+    // Clear existing content
+    cartTableBody.innerHTML = '';
 
+    // Check if cart is empty
     if (cartItems.length === 0) {
         cartTableBody.innerHTML = '<tr><td colspan="5">Cart is empty.</td></tr>';
         return;
     }
 
+    // Append each item to cart table
     cartItems.forEach(item => {
         const smalL_pattern = /\(([^)]+)\)/;
         const smal_detail = item.name.match(smalL_pattern);
         
         // Handle case where there is no match
-        const smallText = smal_detail ? smal_detail[1] : ''; // smal_detail[0] gets the first match
-        
+        const smallText = smal_detail ? smal_detail[1] : ''; 
+
         const productHTML = `
             <tr class="cart-row">
                 <td data-label="Sản phẩm">
@@ -32,7 +34,6 @@ function updateCart() {
                 </td>
                 <td>
                     <a href="" class="product-name">${item.name}</a>
-                    <br><br><br>
                     <small>${smallText}</small>
                     <p>Hãng Đĩa Thời Đại</p>
                     <a href="/cart/change?line=${item.id}&amp;quantity=0" class="cart-remove-btn">
@@ -61,9 +62,23 @@ function updateCart() {
             </tr>
         `;
         
-        cartTableBody.innerHTML += productHTML; // Append new product HTML to the table body
+        // Append each product's HTML to the cartTableBody
+        cartTableBody.insertAdjacentHTML('beforeend', productHTML);
     });    
+
+    // trigger updateCartFooter() after cart-rows are filled.
+    updateCartFooter();
 }
 
+
 // Call updateCart when the page loads
-document.addEventListener('DOMContentLoaded', updateCart);
+document.addEventListener('DOMContentLoaded', () => {
+    updateCart();
+    
+    // Optional: Add event listeners if items or quantities change
+    document.body.addEventListener('click', event => {
+        if (event.target.matches('.cart-remove-btn')) {
+            // handle item removal and update the cart accordingly
+        }
+    });
+});

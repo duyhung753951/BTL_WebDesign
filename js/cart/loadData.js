@@ -3,7 +3,7 @@
     thoroughly checked. Worked as intended.
 */
 
-let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+let cartItems = JSON.parse(sessionStorage.getItem('cartItems')) || [];
 
 // Function to handle adding items to the cart
 function addToCart(product) {
