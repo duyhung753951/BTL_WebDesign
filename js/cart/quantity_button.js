@@ -2,13 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const cartTableBody = document.querySelector('tbody'); // Assuming your buttons are inside a <tbody>
     
     cartTableBody.addEventListener('click', (event) => {
-        console.log("Just clicked on sth.");
-        
         // Check if the clicked element is a quantity adjust button by using closest
         const button = event.target.closest('.quantity-adjust-btn');
         if (button) {
-            console.log("that thing is one of the icons.");
-            
             // Determine the type of button clicked (plus or minus)
             const buttonType = button.classList.contains('js-qty__adjust--minus') ? 'minus' : 'plus';
             const productRow = button.closest('.cart-row');
