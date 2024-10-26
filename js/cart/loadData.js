@@ -3,7 +3,7 @@
     thoroughly checked. Worked as intended.
 */
 
-let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+let cartItems = JSON.parse(sessionStorage.getItem('cartItems')) || [];
 
 // Function to handle adding items to the cart
 function addToCart(product) {
@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.add_to_cart').forEach(button => {
         button.addEventListener('click', function (event) {
             event.preventDefault(); // Prevent form submission
-            alert("Added!");
             
             // Find the closest ancestor's element with 'product' class
             const productElement = button.closest(".product");
