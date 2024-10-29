@@ -1,8 +1,4 @@
 
-/*
-    thoroughly checked. Worked as intended.
-*/
-
 let cartItems = JSON.parse(sessionStorage.getItem('cartItems')) || [];
 
 // Function to handle adding items to the cart

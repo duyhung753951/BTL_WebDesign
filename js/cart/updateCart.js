@@ -32,7 +32,7 @@ function updateCart() {
                 <tr class="cart-row">
                     <td data-label="Sản phẩm">
                         <a href="" class="cart__image">
-                            <img src="${escapedImage}" alt="${escapedName}">
+                            <img class="preview-img" src="${escapedImage}" alt="${escapedName}">
                         </a>
                     </td>
                     <td>
