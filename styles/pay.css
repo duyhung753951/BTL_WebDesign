@@ -169,3 +169,94 @@ input[type="button"]:hover {
   color: #555;
   font-weight: bold;
 }
+.products-list .product-row span {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Responsive styles */
+@media (max-width: 900px) {
+  .products-list .product-row span {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body {
+    width: 95%;
+  }
+
+  .title h1 {
+    font-size: 1.5em;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  input[type="button"] {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+  .check_robot p {
+    font-size: 0.9em;
+  }
+
+  .products-list .product-row span {
+    font-size: 14px;
+  }
+}
+
+/* Check robot custom checkbox styles */
+.check_robot {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.check_robot input[type="checkbox"] {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #f9b043;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  background-color: #fff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.check_robot input[type="checkbox"]:checked {
+  background-color: #f9b043;
+  border-color: #e59532;
+}
+
+.check_robot input[type="checkbox"]::before {
+  content: "✔";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.check_robot input[type="checkbox"]:checked::before {
+  opacity: 1;
+}
+
+.check_robot p {
+  margin: 10px;
+  font-size: 1em;
+  color: #555;
+  font-weight: bold;
+}
+
+.products-list .product-row span {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
