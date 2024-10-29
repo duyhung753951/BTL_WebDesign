@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 80%;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9b043;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+.contact_form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+}
+
+.title h1 {
+  font-size: 1.8em;
+  color: #333;
+  text-align: center;
+}
+
+.title p {
+  color: #555;
+  font-size: 1em;
+  text-align: center;
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+td {
+  padding: 10px 5px;
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #f9b043;
+  outline: none;
+}
+
+select {
+  width: 100%;
+}
+
+.first_name,
+.last_name {
+  width: 100%;
+}
+
+.check_robot {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.check_robot input[type="checkbox"] {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.checkbox {
+  padding-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.check_robot p {
+  margin-left: 10px;
+  font-size: 1em;
+  color: #555;
+}
+
+input[type="button"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #f9b043;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+  background-color: #e59532;
+}
+/* CSS cho check robot tùy chỉnh */
+.check_robot {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.check_robot input[type="checkbox"] {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #f9b043;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  background-color: #fff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.check_robot input[type="checkbox"]:checked {
+  background-color: #f9b043;
+  border-color: #e59532;
+}
+
+.check_robot input[type="checkbox"]::before {
+  content: "✔";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.check_robot input[type="checkbox"]:checked::before {
+  opacity: 1;
+}
+
+.check_robot p {
+  margin: 10px;
+  font-size: 1em;
+  color: #555;
+  font-weight: bold;
+}
