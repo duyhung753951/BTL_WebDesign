@@ -181,7 +181,11 @@ main small {
 
 .pay-btn {
     background-color: #000000; /* Black for pay button */
-    color: #fff;
+    color: white;
+}
+.pay-btn a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .pay-btn:hover {
