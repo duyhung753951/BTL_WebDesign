@@ -1,0 +1,77 @@
+.side-bar {
+    background-color: #efefef;
+    position: fixed;
+    width: 250px;
+    left: -250px;
+    border-right: 1px solid #e9e9e9;
+    top: 0;
+    bottom: 0;
+    z-index: 900;
+    padding: 0 7.5px 7.5px;
+    transition: all 0.4s cubic-bezier(0.46, 0.01, 0.32, 1);
+}
+
+.side-bar-items.nav-search {
+    position: relative;
+    height: 40px;
+    padding: 0;
+}
+
+.side-bar-items.nav-search form input {
+    position: absolute;
+    width: 100%;
+}
+
+.side-bar-items.nav-search form button {
+    position: absolute;
+    right: 0;
+    border: none;
+    padding: 10px;
+}
+
+.side-bar-items {
+    position: relative;
+    padding: 20px 0px;
+    border-bottom: 1px solid black;
+}
+
+#side-bar-close {
+    border: none;
+    background-color: #efefef;
+    cursor: pointer;
+    position: relative;
+    right: -210px;
+    top: -43px;
+    padding: 0;
+}
+
+#side-bar-close i{
+    padding: 10px;
+}
+
+#check {
+    display: none;
+}
+
+.side-bar.open {
+    left: 0;
+}
+.side-bar.open ~ * {
+    margin-left: 250px;
+}
+.side-bar.open ~ #overlay {
+    opacity: 1;
+    visibility: visible;
+}
+.side-bar-header div h3 {
+    margin-bottom: 10px;
+    color: #50222b;
+}
+
+.side-bar-toggle {
+    position: absolute;
+    right: 0;
+    top: 35%;
+    cursor: pointer;
+}
+

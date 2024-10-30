@@ -1,0 +1,247 @@
+/* HEADER */
+.header {
+  background-color: #efefef;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.header-top {
+  padding: 38px 0 37px;
+}
+.header-shop, .header-logo, .header-account {
+  float: left;
+  font-style: italic;
+}
+
+.header-logo img {
+  width: 172px;
+  height: 163.3px;
+}
+
+.main-menu {
+  border-top: 2px solid #000;
+  position: relative;
+}
+
+.header-shop {
+  padding-top: 20px;
+}
+
+.header-top::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header-account ul li a {
+  color: #999999;
+  font-size: 14px;
+}
+
+.account-hover {
+  padding: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+.account-hover:hover ul {
+  display: block;
+  transition: all ease 0.3s;
+  
+}
+
+.header-account ul {
+  padding: 20px;
+  list-style: none;
+  margin: 0;
+  display: none;
+  background: #363636;
+  width: 200px;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  font-style: normal;
+  top: 52px;
+  animation: 0.5s ease 0s normal forwards 1 running drop-animation;
+}
+
+.header-account ul li {
+  font-style: normal;
+  margin: 3px 0;
+}
+
+.header-account ul li:hover a{
+  color: #fff;
+}
+
+.header-account>span {
+  padding: 6px 15px 20px;
+}
+
+.header-navul-1 .nav-item {
+  position: relative;
+  display: block;
+  padding: 17px 28px 15px;
+  float: left;
+}
+
+.header-navul-1 .nav-item .home {
+  padding: 8px 8px 0px !important;
+}
+
+.gohome {
+  height: 40px;
+  width: 50px;
+}
+
+.nav-gohome {
+  padding: 8px 0px;
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.nav-site-link {
+  display: block;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #50222b;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: normal;
+  letter-spacing: 3px;
+  font-size: 15px;
+}
+
+.nav-dropdown {
+  padding: 20px;
+  display: none;
+  position: absolute;
+  left: 0;
+  margin: 0;
+  z-index: 1000;
+  min-width: 200px;
+  top: 48px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+  background-color: #363636;
+  animation: 0.5s ease 0s normal forwards 1 running drop-animation;
+}
+
+.nav-dropdown li, .mega-menu-nav-dropdown li {
+  margin: 4px;
+}
+
+.nav-dropdown li a:hover, .mega-menu-nav-dropdown li a:hover {
+  color: #fff;
+}
+
+.nav-dropdown a {
+  color: #999999;
+  display: block;
+  text-transform: none;
+  font-weight: normal;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.header-nav ul li:hover ul {
+  display: block;
+}
+
+.mega-menu-nav-dropdown {
+  padding: 0;
+  display: none;
+  position: absolute;
+  left: 0;
+  margin: 0;
+  z-index: 1000;
+  top: 48px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+  background-color: #363636;
+  animation: 0.5s ease 0s normal forwards 1 running drop-animation;
+}
+
+.mega-menu {
+  padding: 40px 70px 60px;
+  font-family: Arial, sans-serif;
+}
+
+.mega-menu-nav-dropdown a {
+  color: #999999;
+  display: block;
+  text-transform: none;
+  font-weight: normal;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.menu-item {
+  float: left;
+  padding-bottom: 40px;
+}
+
+.header-navul-2 {
+  padding: 10px;
+}
+
+.input-field {
+  border: none;
+  height: 37px;
+  outline: none;
+  font-size: 14px;
+  background-color: #efefef;
+}
+.respon-navbar {
+  display: none;
+}
+
+#open-btn {
+  padding: 10px 0px;  
+  cursor: pointer;
+}
+
+#check:checked ~.side-bar {
+  left: 0;
+}
+
+@keyframes drop-animation {
+  0% {
+      opacity: 0;
+      transform: translate(0px, 10px);
+  }
+  100% {
+      opacity: 1;
+      transform: translate(0px, 0px);
+  }
+}
+
+/* RESPONSIVE HEADER */
+
+@media only screen and (max-width:768px){
+  .header-account, .header-shop, .header-navul-2, .go-home, .nav-item {
+    display: none !important;
+  }
+  .header-logo {
+    max-width: fit-content;
+    margin: 0 auto;
+    float: none;
+  }
+  .menu-item {
+    margin: 0 10px;
+  }
+  .respon-navbar-item {
+    display: block;
+    float: left;
+  }
+  .respon-navbar-item a i {
+    padding: 10px 0px;
+  }
+  .respon-navbar .wrapper {
+    padding: 0;
+  }
+  .respon-navbar-item:last-child {
+    text-align: right;
+  }
+  .respon-navbar {
+    display: block;
+  }
+ }

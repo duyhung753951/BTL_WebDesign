@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/pay.css" />
+    <link rel="icon" href="../assets/icon/logo-favicon.ico" />
+    <title>Payment</title>
+  </head>
+  <body>
+    <div class="contact_form">
+      <div class="title">
+        <h1>Customer Information</h1>
+        <p>
+          Please fill in your information and we'll be sending your order in no
+          time.
+        </p>
+      </div>
+      <div class="form">
+        <form name="frmAccount" action="abc.jsp">
+          <table>
+            <tr>
+              <td><label for="first_name">Your Name</label></td>
+              <td colspan="2">
+                <input
+                  type="text"
+                  name="first_name"
+                  placeholder="First Name"
+                  class="first_name"
+                />
+              </td>
+              <td colspan="2">
+                <input type="text" name="last_name" placeholder="Last Name" />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email">Your email</label></td>
+              <td colspan="3">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="e.g hello@contact.net"
+                  class="your_email"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="phone_area">Phone*</label></td>
+              <td>
+                <input type="text" name="phone_area" placeholder="###" />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="phone_prefix"
+                  id="phone_prefix"
+                  placeholder="###"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="phone_suffix"
+                  id="phone_suffix"
+                  placeholder="###"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="age">Age*</label></td>
+              <td><input type="text" name="age" /></td>
+            </tr>
+            <tr>
+              <td><label for="subject">Country *</label></td>
+              <td colspan="6">
+                <select id="subject" name="subject">
+                  <option value="vn">Vietnam</option>
+                  <option value="us">United States</option>
+                  <option value="jp">Japan</option>
+                  <option value="ot">Other</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="cart">Your Cart:</label></td>
+              <td colspan="3">
+                <div class="products-list">
+                  <!-- Sản phẩm sẽ tự động thêm vào đây -->
+                </div>
+              </td>
+              <td>
+                <div class="total-container">
+                  <span>Tổng cộng:</span>
+                  <span class="total-price">0₫</span>
+                  <!-- Tổng giá sẽ tự động cập nhật -->
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="message">Message</label></td>
+              <td colspan="4">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  cols="90"
+                  placeholder="Nhập tin nhắn ở đây..."
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="not_robot">Verification*</label></td>
+              <td colspan="4" class="checkbox">
+                <div class="check_robot">
+                  <input type="checkbox" id="not_robot" name="check_robot" />
+                  <p>I'm not a robot</p>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input
+                  type="button"
+                  value="Submit"
+                  onclick="validform(document.forms.frmAccount);"
+                />
+              </td>
+              <td>
+                <a href="./cart.html"><input type="button" value="Back" /></a>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/pay.js"></script>
+  </body>
+</html>
