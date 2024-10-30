@@ -218,7 +218,6 @@
       </nav>
   </div>
 
-
   <div method="post" novalidate="" class="shopping-cart cart-table-container">
       <!-- This is just the header preview -->
       <table class="cart-table">
@@ -266,7 +265,7 @@
  <!-- FOOTER -->
 <div id="footer"></div>
 
-<!-- Import JS scripts with defer -->
+<!-- Import JS scripts -->
 <script src="./js/side-bar.js" defer></script>
 <script src="js/cart/quantity_button.js" defer></script>
 <script src="js/cart/updatePrice.js" defer></script>
@@ -275,7 +274,6 @@
 <script src="js/cart/updateCartFooter.js" defer></script>
 
 <script>
-    // Load the footer
     fetch('footer.html')
         .then(response => response.text())
         .then(data => {
